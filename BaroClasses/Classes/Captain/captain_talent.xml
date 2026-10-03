@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="barocap">
+        <SubTree identifier="barocap_primary" nameidentifier="talenttree.primary" type="primary">
+            <TalentOptions requiredtalents="2" maxchosentalents="5">
+                <TalentOption identifier="prodigy"/>
+                <TalentOption identifier="inspirationalleader"/>
+                <TalentOption identifier="veteran"/>
+                <TalentOption identifier="travelingtradesman"/>
+                <TalentOption identifier="bagitup"/>
+            </TalentOptions>
+            <TalentOptions requiredtalents="2" maxchosentalents="5">
+                <TalentOption identifier="emergencymaneuvers"/>
+                <TalentOption identifier="sailorwithnoname"/>
+                <TalentOption identifier="downwiththeship"/>
+                <TalentOption identifier="gunsmith"/>
+                <TalentOption identifier="mule"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="cap_loyalist" type="specialization" requires="barocap_primary" blocks="cap_gunsmith,cap_skipper">
+            <TalentOptions>
+                <TalentOption identifier="anappleaday"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="specops"/>
+                <TalentOption identifier="anappleaday"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="disloyalscum"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="bigguns"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="cap_skipper" type="specialization" requires="barocap_primary" blocks="cap_loyalist,cap_gunsmith">
+            <TalentOptions>
+                <TalentOption identifier="leadingbyexample"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="helmsman"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="inspiringpresence"/>
+                <TalentOption identifier="trickledown"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="family"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="cap_gunsmith" type="specialization" requires="barocap_primary" blocks="cap_skipper,cap_loyalist">
+            <TalentOptions>
+                <TalentOption identifier="pacificationkit"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="tandemfire"/>
+                <TalentOption identifier="commando"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="rifleman"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="warlord"/>
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

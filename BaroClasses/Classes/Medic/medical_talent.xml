@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="baromed">
+        <SubTree identifier="baromed_primary" nameidentifier="talenttree.primary" type="primary">
+            <TalentOptions requiredtalents="2" maxchosentalents="5">
+                <TalentOption identifier="prodigy"/>
+                <TalentOption identifier="inspirationalleader"/>
+                <TalentOption identifier="veteran"/>
+                <TalentOption identifier="travelingtradesman"/>
+                <TalentOption identifier="bagitup"/>
+            </TalentOptions>
+            <TalentOptions requiredtalents="2" maxchosentalents="5">
+                <TalentOption identifier="emergencymaneuvers"/>
+                <TalentOption identifier="sailorwithnoname"/>
+                <TalentOption identifier="downwiththeship"/>
+                <TalentOption identifier="gunsmith"/>
+                <TalentOption identifier="mule"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="med_loyalist" type="specialization" requires="baromed_primary" blocks="med_gunsmith,med_gunsmith">
+            <TalentOptions>
+                <TalentOption identifier="anappleaday"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="specops"/>
+                <TalentOption identifier="anappleaday"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="disloyalscum"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="bigguns"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="med_skipper" type="specialization" requires="baromed_primary" blocks="med_loyalist,med_gunsmith">
+            <TalentOptions>
+                <TalentOption identifier="leadingbyexample"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="helmsman"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="inspiringpresence"/>
+                <TalentOption identifier="trickledown"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="family"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="med_gunsmith" type="specialization" requires="baromed_primary" blocks="med_skipper,med_loyalist">
+            <TalentOptions>
+                <TalentOption identifier="pacificationkit"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="tandemfire"/>
+                <TalentOption identifier="commando"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="rifleman"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="warlord"/>
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

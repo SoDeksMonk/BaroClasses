@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="BaroClasses" corepackage="false" gameversion="1.0.0.0">
+    <Item file="%ModDir%/Items/Robot/robotbelt.xml"/>
+    <Item file="%ModDir%/Items/Robot/robotframeshell.xml"/>
+    <Item file="%ModDir%/Items/Robot/robotupgrades.xml"/>
+
+    <Jobs file="%ModDir%/Classes/Captain/captain.xml" />
+    <Jobs file="%ModDir%/Classes/Medic/medic.xml" />
+    <Jobs file="%ModDir%/Classes/Robot/robot.xml" />
+    
+    <Talents file="%ModDir%/Talents/robot_custom_talent.xml"/>
+
+    <TalentTrees file="%ModDir%/Classes/Captain/captain_talent.xml" />
+    <TalentTrees file="%ModDir%/Classes/Medic/medical_talent.xml" />
+    <TalentTrees file="%ModDir%/Classes/Robot/robot_talent.xml" />
+
+    <Text file="%ModDir%/Text/Russian/robot_ru.xml"/>
+    <Text file="%ModDir%/Text/English/robot_en.xml"/>
+    <Text file="%ModDir%/Text/Russian/captain_ru.xml"/>
+    <Text file="%ModDir%/Text/English/captain_en.xml"/>
+</contentpackage>

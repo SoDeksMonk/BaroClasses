@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="robot_cap_fabrication">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,6" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.robotupgradecap" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="robotupgradecap" />
+  </Talent>
+  <Talent identifier="robot_melee_power">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,6" sheetelementsize="128,128" />
+    <Description tag="talentdescription.additionalstattype">
+      <Replace tag="[amount]" value="40" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.meleeattackmultiplier" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.4" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="robot_melee_defense">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,6" sheetelementsize="128,128" />
+    <Description tag="talentdescription.additionalstattype">
+      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.physicalresistance" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="damage" multiplier="0.8" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="robot_belt_fabrication">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="6,6" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.robotupgradebelt" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.robotbeltresistance" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="blunttrauma" multiplier="0.8" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="robotupgradebelt" />
+  </Talent>
+  <Talent identifier="robot_clothes_fabrication">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,6" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.robotupgradeclothes" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="robotupgradeclothes" />
+  </Talent>
+</Talents>

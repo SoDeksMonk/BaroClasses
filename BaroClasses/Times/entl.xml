@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="engineer">
+        <!-- Общие таланты (General) -->
+        <SubTree identifier="general">
+            <TalentOptions>
+                <TalentOption identifier="egghead" />
+                <TalentOption identifier="grounded" />
+                <TalentOption identifier="junctionjunkie" />
+                <TalentOption identifier="remotemonitor" />
+                <TalentOption identifier="stationengineer" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="aggressiveengineering" />
+                <TalentOption identifier="funwithfission" />
+                <TalentOption identifier="melodicspirit" />
+                <TalentOption identifier="submarineofthings" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Weapons Engineer (Оружейный инженер) -->
+        <SubTree identifier="weaponsengineer">
+            <TalentOptions>
+                <TalentOption identifier="militaryapplications" />
+                <TalentOption identifier="gridmaintainer" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="explosiveexpert" />
+                <TalentOption identifier="heavyordnance" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="demolitionsexpert" />
+                <TalentOption identifier="nuclearoption" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="lightningwizard" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Electrician (Электрик) -->
+        <SubTree identifier="electrician">
+            <TalentOptions>
+                <TalentOption identifier="powerhungry" />
+                <TalentOption identifier="batterywhisperer" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="overclocking" />
+                <TalentOption identifier="chainreaction" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="powersurge" />
+                <TalentOption identifier="emergencypower" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="fulguriumexpert" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Physicist (Физик) -->
+        <SubTree identifier="physicist">
+            <TalentOptions>
+                <TalentOption identifier="radiationresistance" />
+                <TalentOption identifier="reactorexpert" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="fuelrodmastery" />
+                <TalentOption identifier="dangerzone" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="phdinnuclearphysics" />
+                <TalentOption identifier="radiationhardened" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="nuclearphysicist" />
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

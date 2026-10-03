@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="mechanic">
+        <!-- Общие таланты (General) -->
+        <SubTree identifier="general">
+            <TalentOptions>
+                <TalentOption identifier="ballastdenizen" />
+                <TalentOption identifier="engineengineer" />
+                <TalentOption identifier="machinemanic" />
+                <TalentOption identifier="multifunctional" />
+                <TalentOption identifier="safetyfirst" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="salvagecrew" />
+                <TalentOption identifier="ironman" />
+                <TalentOption identifier="modularrepairs" />
+                <TalentOption identifier="oiledmachinery" />
+                <TalentOption identifier="pumpn" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Machinist (Машинист) -->
+        <SubTree identifier="machinist">
+            <TalentOptions>
+                <TalentOption identifier="tinkerer" />
+                <TalentOption identifier="quickfix" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="massproduction" />
+                <TalentOption identifier="efficientrepairs" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="overclocking" />
+                <TalentOption identifier="steadytune" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="gunsmith" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Pioneer (Пионер) -->
+        <SubTree identifier="pioneer">
+            <TalentOptions>
+                <TalentOption identifier="miner" />
+                <TalentOption identifier="prospector" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="scavenger" />
+                <TalentOption identifier="deepdiver" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="resourcenetwork" />
+                <TalentOption identifier="efficientmining" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="masterminer" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Brawler (Драчун) -->
+        <SubTree identifier="brawler">
+            <TalentOptions>
+                <TalentOption identifier="scrapper" />
+                <TalentOption identifier="improvisedweapons" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="ironfist" />
+                <TalentOption identifier="toughasnails" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="berserker" />
+                <TalentOption identifier="battlehardened" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="unstoppable" />
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

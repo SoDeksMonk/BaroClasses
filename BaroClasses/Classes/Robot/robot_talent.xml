@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="robot">
+    <SubTree identifier="robot_primary" nameidentifier="talenttree.primary" type="primary">
+      <TalentOptions requiredtalents="2" maxchosentalents="6">
+        <TalentOption identifier="salvagecrew" />
+        <TalentOption identifier="machinemaniac" />
+        <TalentOption identifier="safetyfirst" />
+        <TalentOption identifier="multifunctional" />
+        <TalentOption identifier="stationengineer" />
+        <TalentOption identifier="grounded" />
+      </TalentOptions>
+      <TalentOptions requiredtalents="2" maxchosentalents="6">
+        <TalentOption identifier="modularrepairs" />
+        <TalentOption identifier="oiledmachinery" />
+        <TalentOption identifier="junctionjunkie" />
+        <TalentOption identifier="ironman" />
+        <TalentOption identifier="physicalconditioning" />
+        <TalentOption identifier="weaponsmith" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="robot_upgrades" type="specialization" requires="robot_primary" blocks="robot_energy,robot_combat">
+      <TalentOptions>
+        <TalentOption identifier="robot_cap_fabrication" />
+      </TalentOptions>
+      <TalentOptions maxchosentalents="1">
+        <TalentOption identifier="robot_melee_power" />
+        <TalentOption identifier="robot_melee_defense" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="robot_belt_fabrication" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="robot_clothes_fabrication" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="robot_energy" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_combat">
+      <TalentOptions>
+        <TalentOption identifier="gridmaintainer" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="funwithfission" />
+        <TalentOption identifier="unlimitedpower" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="betterthannew" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="lightningwizard" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="robot_combat" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_energy">
+      <TalentOptions>
+        <TalentOption identifier="boardingparty" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="scavenger" />
+        <TalentOption identifier="slayer" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="easyturtle" />
+        <TalentOption identifier="daringdolphin" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="specops" />
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+</TalentTrees>
