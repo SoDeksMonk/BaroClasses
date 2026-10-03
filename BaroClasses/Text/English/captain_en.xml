@@ -2,4 +2,7 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <jobname.barocap>Cap</jobname.barocap>
   <jobdescription.barocap>Veteran captain.</jobdescription.barocap>
+  <talenttree.cap_loyalist>Loyalist</talenttree.cap_loyalist>
+  <talenttree.cap_skipper>Skipper</talenttree.cap_skipper>
+  <talenttree.cap_gunsmith>Gunsmith</talenttree.cap_gunsmith>
 </infotexts>

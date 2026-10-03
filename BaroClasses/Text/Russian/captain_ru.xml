@@ -2,4 +2,7 @@
 <infotexts language="Russian" nowhitespace="false" translatedname="Русский">
   <jobname.barocap>Кэп</jobname.barocap>
   <jobdescription.barocap>Ветеран капитан.</jobdescription.barocap>
+  <talenttree.cap_loyalist>Лоялист</talenttree.cap_loyalist>
+  <talenttree.cap_skipper>Шкипер</talenttree.cap_skipper>
+  <talenttree.cap_gunsmith>Оружейник</talenttree.cap_gunsmith>
 </infotexts>
