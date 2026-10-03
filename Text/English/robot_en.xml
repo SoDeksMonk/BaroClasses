@@ -6,7 +6,7 @@
   <talenttree.robot_combat>Combat Chassis</talenttree.robot_combat>
   <talenttree.robot_upgrades>Upgrades, people!</talenttree.robot_upgrades>
   <entityname.robotupgradecap>Reinforced Cap</entityname.robotupgradecap>
-  <entitydescription.robotupgradecap>Increases maximum health by 20%, reduces blunt trauma damage by 20%, concussion by 70%, and stun by 40%.</entitydescription.robotupgradecap>
+  <entitydescription.robotupgradecap>Increases maximum health by 20%, reduces blunt trauma damage by 20%, stun by 40%, and provides full immunity to concussion.</entitydescription.robotupgradecap>
   <entityname.robotupgradeclothes>Reinforced Underlayer</entityname.robotupgradeclothes>
   <entitydescription.robotupgradeclothes>Protective underlayer: 40% resistance to ballistic, laceration, bite, explosion and burn damage, 60% organ damage resistance, 30% electric resistance, and complete immunity to poisons, drunkenness, and nausea.</entitydescription.robotupgradeclothes>
   <entityname.robotupgradebelt>Robot Utility Belt</entityname.robotupgradebelt>

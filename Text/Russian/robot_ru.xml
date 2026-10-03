@@ -6,7 +6,7 @@
   <talenttree.robot_combat>Боевой каркас</talenttree.robot_combat>
   <talenttree.robot_upgrades>Улучшаемся, пиплы!</talenttree.robot_upgrades>
   <entityname.robotupgradecap>Усиленная кепка</entityname.robotupgradecap>
-  <entitydescription.robotupgradecap>Увеличивает максимальное здоровье на 20%, снижает урон от ушибов на 20%, сотрясение на 70% и оглушение на 40%.</entitydescription.robotupgradecap>
+  <entitydescription.robotupgradecap>Увеличивает максимальное здоровье на 20%, снижает урон от ушибов на 20%, оглушение на 40% и дает полный иммунитет к сотрясению мозга.</entitydescription.robotupgradecap>
   <entityname.robotupgradeclothes>Защитный поддоспешник</entityname.robotupgradeclothes>
   <entitydescription.robotupgradeclothes>Защитный поддоспешник: 40% защиты от пуль, рваных ран, укусов, взрывов и ожогов, 60% защиты органов, 30% защиты от электричества и полный иммунитет к ядам, алкоголю и тошноте.</entitydescription.robotupgradeclothes>
   <entityname.robotupgradebelt>Пояс робота</entityname.robotupgradebelt>
