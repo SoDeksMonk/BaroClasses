@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="baromed">
+        <SubTree identifier="baromed_primary" nameidentifier="talenttree.primary" type="primary">
+            <TalentOptions requiredtalents="2" maxchosentalents="6">
+                <TalentOption identifier="healthinsurance"/>
+                <TalentOption identifier="nobodyimportantdies"/>
+                <TalentOption identifier="exampleofhealth"/>
+                <TalentOption identifier="laresistance"/>
+                <TalentOption identifier="selfcare"/>
+                <TalentOption identifier="stayinalive"/>
+            </TalentOptions>
+                <TalentOptions requiredtalents="2" maxchosentalents="5">
+                <TalentOption identifier="firemanscarry"/>
+                <TalentOption identifier="medicalcompanion"/>
+                <TalentOption identifier="dontdieonme"/>
+                <TalentOption identifier="nopressure"/>
+                <TalentOption identifier="blooddonor"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="combat_medic" type="specialization" requires="baromed_primary" blocks="medic,Scammer">
+            <TalentOptions>
+                <TalentOption identifier="hunter"/>
+            </TalentOptions>
+            <TalentOptions maxchosentalents="1">
+                <TalentOption identifier="tandemfire"/>
+                <TalentOption identifier="extrapowder"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="supersoldiers"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="macrodosing"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="medic" type="specialization" requires="baromed_primary" blocks="combat_medic,Scammer">
+            <TalentOptions>
+                <TalentOption identifier="macrodosing"/>
+            </TalentOptions>
+            <TalentOptions maxchosentalents="1">
+                <TalentOption identifier="medicalassistance"/>
+                <TalentOption identifier="vitaminsupplements"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="drsubmarine"/>
+                <TalentOption identifier="emergencyresponse"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="miracleworker"/>
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="macrodosing"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="Scammer" type="specialization" requires="baromed_primary" blocks="combat_medic,medic">
+            <TalentOptions maxchosentalents="1">
+                <TalentOption identifier="med_visor"/>
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

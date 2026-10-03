@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="robotupgradebelt" category="Equipment" tags="mediumitem,mobilecontainer,tool" scale="0.5" fireproof="true" impactsoundtag="impact_soft">
+    <Price baseprice="120" sold="false" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="steel" amount="5" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,576,64,64" origin="0.5,0.5" />
+    <Sprite name="Robot Utility Belt Item" texture="Content/Items/Tools/tools.png" sourcerect="256,102,112,54" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="45" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="Robot Utility Belt" texture="Content/Items/Tools/tools.png" sourcerect="256,102,112,54" limb="Torso" inherittexturescale="true" origin="0.5,-0.2" canbehiddenbyotherwearables="false" />
+    </Wearable>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="battery" containedstateindicatorslot="0" msg="ItemMsgInteractSelect">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="fuelrod" excludebroken="false" excludefullcondition="true">
+          <StatusEffect type="OnContaining" targettype="Contained" Condition="0.0556" interval="1" disabledeltatime="true" />
+        </Containable>
+        <Containable items="fulguriumfuelrod" excludebroken="false" excludefullcondition="true">
+          <StatusEffect type="OnContaining" targettype="Contained" Condition="0.0833" interval="1" disabledeltatime="true" />
+        </Containable>
+        <Containable items="thoriumfuelrod" excludebroken="false" excludefullcondition="true">
+          <StatusEffect type="OnContaining" targettype="Contained" Condition="0.1111" interval="1" disabledeltatime="true" />
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="2" maxstacksize="1">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,robotupgradebelt,fuelrod,fulguriumfuelrod,thoriumfuelrod" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+</Items>

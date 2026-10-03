@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <!-- Кастомный талант: Мастер на все руки -->
+    <Talent identifier="baro_jackofalltrades" name="Мастер на все руки" description="Вы получаете +10 ко всем навыкам.">
+        <Effect type="CharacterAbilityGiveStat" stattype="Medical" value="10" />
+        <Effect type="CharacterAbilityGiveStat" stattype="Helm" value="10" />
+        <Effect type="CharacterAbilityGiveStat" stattype="Electrical" value="10" />
+        <Effect type="CharacterAbilityGiveStat" stattype="Mechanical" value="10" />
+        <Effect type="CharacterAbilityGiveStat" stattype="Weapons" value="10" />
+    </Talent>
+
+    <!-- Кастомный талант: Вдохновляющий лидер -->
+    <Talent identifier="baro_inspirationalleader" name="Вдохновляющий лидер" description="Члены экипажа рядом с вами получают +15% к скорости ремонта.">
+        <Effect type="CharacterAbilityGiveStat" stattype="RepairSpeed" value="0.15" />
+    </Talent>
+
+    <!-- Кастомный талант: Быстрая реакция -->
+    <Talent identifier="baro_quickdraw" name="Быстрая реакция" description="+20% к скорости перезарядки оружия.">
+        <Effect type="CharacterAbilityGiveStat" stattype="RangedAttackSpeed" value="0.20" />
+    </Talent>
+
+    <!-- Кастомный талант: Крепкий орешек -->
+    <Talent identifier="baro_toughasnails" name="Крепкий орешек" description="+15% к сопротивлению урону.">
+        <Effect type="CharacterAbilityGiveStat" stattype="DamageResistance" value="0.15" />
+    </Talent>
+
+    <!-- Кастомный талант: Мастер-электрик -->
+    <Talent identifier="baro_electricalmaster" name="Мастер-электрик" description="+25% к скорости ремонта электрических систем.">
+        <Effect type="CharacterAbilityGiveStat" stattype="ElectricalRepairSpeed" value="0.25" />
+    </Talent>
+</Talents>

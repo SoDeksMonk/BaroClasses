@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="captain">
+        <!-- Капитан: Специализация Gunslinger (Стрелок) -->
+        <SubTree identifier="gunslinger">
+            <TalentOptions>
+                <TalentOption identifier="onceuponatimeoneuropa" />
+                <TalentOption identifier="quickdraw" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="tumble" />
+                <TalentOption identifier="evasivemaneuvers" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="commander" />
+                <TalentOption identifier="trustedcaptain" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="bountyhunter" />
+                <TalentOption identifier="sailorwithnoname" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Капитан: Специализация Skipper (Шкипер) -->
+        <SubTree identifier="skipper">
+            <TalentOptions>
+                <TalentOption identifier="travelingtradesman" />
+                <TalentOption identifier="trustbuilding" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="maintenanceroutine" />
+                <TalentOption identifier="drunken sailor" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="trucker" />
+                <TalentOption identifier="drownwiththeship" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="camaraderie" />
+                <TalentOption identifier="inspire to battle" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Капитан: Специализация Shipmaster (Капитан корабля) -->
+        <SubTree identifier="shipmaster">
+            <TalentOptions>
+                <TalentOption identifier="politician" />
+                <TalentOption identifier="inspirationalleader" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="logisticsexpert" />
+                <TalentOption identifier="prodigy" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="gunsmith" />
+                <TalentOption identifier="veteran" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="esteemedcaptain" />
+                <TalentOption identifier="allhandsondeck" />
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>

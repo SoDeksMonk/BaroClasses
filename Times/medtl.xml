@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+    <TalentTree jobidentifier="medicaldoctor">
+        <!-- Общие таланты (General) -->
+        <SubTree identifier="general">
+            <TalentOptions>
+                <TalentOption identifier="exampleofhealth" />
+                <TalentOption identifier="healthinsurance" />
+                <TalentOption identifier="laresistance" />
+                <TalentOption identifier="nobodyimportantdies" />
+                <TalentOption identifier="selfcare" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="stayinalive" />
+                <TalentOption identifier="blooddonor" />
+                <TalentOption identifier="medicalcompanion" />
+                <TalentOption identifier="medicalexpertise" />
+                <TalentOption identifier="medicalassistance" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Xenologist (Ксенолог) -->
+        <SubTree identifier="xenologist">
+            <TalentOptions>
+                <TalentOption identifier="geneharvester" />
+                <TalentOption identifier="advancedgenesplicer" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="xenobiologist" />
+                <TalentOption identifier="geneticresearch" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="geneticperfection" />
+                <TalentOption identifier="xenopharmacology" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="mastergeneticist" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Medic (Медик) -->
+        <SubTree identifier="medic">
+            <TalentOptions>
+                <TalentOption identifier="surgeon" />
+                <TalentOption identifier="fieldmedic" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="painkiller" />
+                <TalentOption identifier="advanceddiagnostics" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="bloodtransfusionspecialist" />
+                <TalentOption identifier="antibioticresistance" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="traumaspecialist" />
+            </TalentOptions>
+        </SubTree>
+
+        <!-- Специализация: Chemist (Химик) -->
+        <SubTree identifier="chemist">
+            <TalentOptions>
+                <TalentOption identifier="researchassistant" />
+                <TalentOption identifier="emergencysurgery" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="toxicologist" />
+                <TalentOption identifier="chemicalexpert" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="plaguedoctor" />
+                <TalentOption identifier="improvedsyringegun" />
+            </TalentOptions>
+            <TalentOptions>
+                <TalentOption identifier="labcontacts" />
+                <TalentOption identifier="supersoldier" />
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+</TalentTrees>
