@@ -6,9 +6,9 @@
   <talenttree.robot_combat>Боевой каркас</talenttree.robot_combat>
   <talenttree.robot_upgrades>Улучшаемся, пиплы!</talenttree.robot_upgrades>
   <entityname.robotupgradecap>Усиленная кепка</entityname.robotupgradecap>
-  <entitydescription.robotupgradecap>Увеличивает максимальное здоровье на 20% и снижает урон от ушибов на 20%.</entitydescription.robotupgradecap>
+  <entitydescription.robotupgradecap>Увеличивает максимальное здоровье на 20%, снижает урон от ушибов на 20%, сотрясение на 70% и оглушение на 40%.</entitydescription.robotupgradecap>
   <entityname.robotupgradeclothes>Защитный поддоспешник</entityname.robotupgradeclothes>
-  <entitydescription.robotupgradeclothes>Защитный поддоспешник, обеспечивающий 40% сопротивления выбранным вредным аффликциям. Не защищает от кровотечения, потери крови, заражения husk и лучевой болезни.</entitydescription.robotupgradeclothes>
+  <entitydescription.robotupgradeclothes>Защитный поддоспешник: 40% защиты от пуль, рваных ран, укусов, взрывов и ожогов, 60% защиты органов, 30% защиты от электричества и полный иммунитет к ядам, алкоголю и тошноте.</entitydescription.robotupgradeclothes>
   <entityname.robotupgradebelt>Пояс робота</entityname.robotupgradebelt>
   <entitydescription.robotupgradebelt>Пояс с отдельным слотом для стержня, который медленно восстанавливает его прочность, и двумя слотами для мелких предметов. Занимает слот Bag, поэтому его нельзя носить вместе с обычным toolbelt.</entitydescription.robotupgradebelt>
   <talentdescription.robotbeltresistance>Также даёт 20% сопротивления ушибам.</talentdescription.robotbeltresistance>
