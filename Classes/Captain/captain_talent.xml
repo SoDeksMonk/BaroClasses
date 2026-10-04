@@ -19,13 +19,14 @@
         </SubTree>
         <SubTree identifier="cap_loyalist" type="specialization" requires="barocap_primary" blocks="cap_gunsmith,cap_skipper">
             <TalentOptions>
-                <TalentOption identifier="anappleaday"/>
+                <TalentOption identifier="commando"/>
+                <TalentOption identifier="quickdraw"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="specops"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="disloyalscum"/>
+                <TalentOption identifier="lonewolf"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="bigguns"/>
@@ -34,6 +35,7 @@
         <SubTree identifier="cap_skipper" type="specialization" requires="barocap_primary" blocks="cap_loyalist,cap_gunsmith">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample"/>
+                
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="helmsman"/>
@@ -52,7 +54,7 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="tandemfire"/>
-                <TalentOption identifier="commando"/>
+                
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="rifleman"/>
