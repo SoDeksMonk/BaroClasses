@@ -18,9 +18,7 @@
       <Item identifier="idcard" equip="true" showpreview="false" />
       <Item identifier="headset" equip="true" showpreview="false" />
       <Item identifier="robotframeshell" equip="true" outfit="true">
-        <Item identifier="oxygentank" showpreview="false" />
         <Item identifier="fuelrod" showpreview="false" />
-        <Item identifier="oxygentank" showpreview="false" />
       </Item>
     </ItemSet>
   </Job>
