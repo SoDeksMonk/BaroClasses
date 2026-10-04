@@ -7,4 +7,6 @@
   <talenttree.cap_gunsmith>Gunsmith</talenttree.cap_gunsmith>
   <talentdescription.cap_def_helmet>Great defence cap</talentdescription.cap_def_helmet>
   <talentname.cap_def_helmet>Cap helmet</talentname.cap_def_helmet>
+  <entityname.cap_helmet>Cap helmet</entityname.cap_helmet>
+  <entitydescription.cap_helmet>cap for chosen</entitydescription.cap_helmet>
 </infotexts>
