@@ -11,6 +11,8 @@
   <entitydescription.robotupgradeclothes>Protective underlayer: 40% resistance to ballistic, laceration, bite, explosion and burn damage, 60% organ damage resistance, 30% electric resistance, and complete immunity to poisons, drunkenness, and nausea.</entitydescription.robotupgradeclothes>
   <entityname.robotupgradebelt>Robot Utility Belt</entityname.robotupgradebelt>
   <entitydescription.robotupgradebelt>A utility belt with one dedicated fuel-rod slot that slowly restores the rod's condition and two small-item slots. It occupies the Bag slot and cannot be worn with a standard toolbelt.</entitydescription.robotupgradebelt>
+  <entityname.thermalpatch>Thermal Repair Patch</entityname.thermalpatch>
+  <entitydescription.thermalpatch>A rapid-acting weld patch designed to seal structural damage on a robotic chassis. Restores chassis integrity based on mechanical skill. Applying it directly to living flesh causes severe thermal burns.</entitydescription.thermalpatch>
   <talentdescription.robotbeltresistance>Also grants 20% resistance to blunt trauma.</talentdescription.robotbeltresistance>
   <talentname.robot_cap_fabrication>Reinforced Headgear</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Overclocked Strikes</talentname.robot_melee_power>

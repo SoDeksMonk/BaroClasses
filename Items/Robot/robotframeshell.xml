@@ -22,6 +22,9 @@
       <sprite name="Robot Shell Left Leg" texture="%ModDir%/Items/Robot/Exosuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true" />
       <sprite name="Robot Shell Left Shoe" texture="%ModDir%/Items/Robot/Exosuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
       <sprite name="Robot Shell Right Shoe" texture="%ModDir%/Items/Robot/Exosuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+      <StatusEffect type="OnWearing" target="Character">
+        <GiveStatusTag tag="robot_frame" />
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
         <ReduceAffliction type="damage" amount="0.2" />
         <ReduceAffliction type="burn" amount="0.2" />

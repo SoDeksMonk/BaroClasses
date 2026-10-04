@@ -3,6 +3,7 @@
     <Item file="%ModDir%/Items/Robot/robotbelt.xml"/>
     <Item file="%ModDir%/Items/Robot/robotframeshell.xml"/>
     <Item file="%ModDir%/Items/Robot/robotupgrades.xml"/>
+    <Item file="%ModDir%/Items/Robot/thermalpatch.xml"/>
     <Item file="%ModDir%/Items/Medic/medichelmet.xml"/>
 
     <Jobs file="%ModDir%/Classes/Captain/captain.xml" />

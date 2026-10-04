@@ -11,6 +11,8 @@
   <entitydescription.robotupgradeclothes>Защитный поддоспешник: 40% защиты от пуль, рваных ран, укусов, взрывов и ожогов, 60% защиты органов, 30% защиты от электричества и полный иммунитет к ядам, алкоголю и тошноте.</entitydescription.robotupgradeclothes>
   <entityname.robotupgradebelt>Пояс робота</entityname.robotupgradebelt>
   <entitydescription.robotupgradebelt>Пояс с отдельным слотом для стержня, который медленно восстанавливает его прочность, и двумя слотами для мелких предметов. Занимает слот Bag, поэтому его нельзя носить вместе с обычным toolbelt.</entitydescription.robotupgradebelt>
+  <entityname.thermalpatch>Сварная термозаплатка</entityname.thermalpatch>
+  <entitydescription.thermalpatch>Быстрозатвердевающая заплатка для заварки пробоин в металлическом корпусе робота. Восстанавливает повреждения каркаса на основе навыка механики. При попытке наложить на живую плоть наносит сильный термический ожог.</entitydescription.thermalpatch>
   <talentdescription.robotbeltresistance>Также даёт 20% сопротивления ушибам.</talentdescription.robotbeltresistance>
   <talentname.robot_cap_fabrication>Усиленная экипировка головы</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Усиленный удар</talentname.robot_melee_power>
