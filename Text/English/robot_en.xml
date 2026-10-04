@@ -14,6 +14,17 @@
   <entityname.thermalpatch>Thermal Repair Patch</entityname.thermalpatch>
   <entitydescription.thermalpatch>A rapid-acting weld patch designed to seal structural damage on a robotic chassis. Restores chassis integrity based on mechanical skill. Applying it directly to living flesh causes severe thermal burns.</entitydescription.thermalpatch>
   <talentdescription.robotbeltresistance>Also grants 20% resistance to blunt trauma.</talentdescription.robotbeltresistance>
+  <talenttree.robot_crafter>Fabrication</talenttree.robot_crafter>
+  <talentname.robot_crafter_tier1>Tooling Calibration</talentname.robot_crafter_tier1>
+  <talentdescription.robot_crafter_tier1>Tools and reactor fuel rods you fabricate are of higher quality (+1 quality level).</talentdescription.robot_crafter_tier1>
+  <talentname.robot_crafter_weapons>Armament Protocol</talentname.robot_crafter_weapons>
+  <talentdescription.robot_crafter_weapons>Weapons you fabricate are of higher quality (+1 quality level).</talentdescription.robot_crafter_weapons>
+  <talentname.robot_crafter_power>Power Synthesis</talentname.robot_crafter_power>
+  <talentdescription.robot_crafter_power>Mobile batteries you fabricate are of higher quality (+1 quality level).</talentdescription.robot_crafter_power>
+  <talentname.robot_crafter_speed>Industrial Overclock</talentname.robot_crafter_speed>
+  <talentdescription.robot_crafter_speed>Fabricators and deconstructors operate 50% faster.</talentdescription.robot_crafter_speed>
+  <talentname.robot_crafter_refiner>Mineral Enrichment</talentname.robot_crafter_refiner>
+  <talentdescription.robot_crafter_refiner>When deconstructing raw ores and minerals, you have a [chance]% chance to extract double the materials.</talentdescription.robot_crafter_refiner>
   <talentname.robot_cap_fabrication>Reinforced Headgear</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Overclocked Strikes</talentname.robot_melee_power>
   <talentname.robot_melee_defense>Reactive Armor</talentname.robot_melee_defense>

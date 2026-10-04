@@ -19,7 +19,7 @@
         <TalentOption identifier="weaponsmith" />
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="robot_upgrades" type="specialization" requires="robot_primary" blocks="robot_energy,robot_combat">
+    <SubTree identifier="robot_upgrades" type="specialization" requires="robot_primary" blocks="robot_crafter,robot_combat">
       <TalentOptions>
         <TalentOption identifier="robot_cap_fabrication" />
       </TalentOptions>
@@ -34,22 +34,22 @@
         <TalentOption identifier="robot_clothes_fabrication" />
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="robot_energy" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_combat">
+    <SubTree identifier="robot_crafter" nameidentifier="talenttree.robot_crafter" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_combat">
       <TalentOptions>
-        <TalentOption identifier="gridmaintainer" />
+        <TalentOption identifier="robot_crafter_tier1" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="funwithfission" />
-        <TalentOption identifier="unlimitedpower" />
+        <TalentOption identifier="robot_crafter_weapons" />
+        <TalentOption identifier="robot_crafter_power" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="betterthannew" />
+        <TalentOption identifier="robot_crafter_speed" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="lightningwizard" />
+        <TalentOption identifier="robot_crafter_refiner" />
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="robot_combat" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_energy">
+    <SubTree identifier="robot_combat" type="specialization" requires="robot_primary" blocks="robot_upgrades,robot_crafter">
       <TalentOptions>
         <TalentOption identifier="boardingparty" />
       </TalentOptions>

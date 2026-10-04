@@ -51,4 +51,63 @@
     </Description>
     <AddedRecipe itemidentifier="robotupgradeclothes" />
   </Talent>
+
+  <!-- Ветка Фабрикатора (Вместо Энергетика) -->
+  <Talent identifier="robot_crafter_tier1">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="6,5" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_crafter_tier1" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="tool~toolmaintenance" stattype="IncreaseFabricationQuality" value="1" setvalue="true" />
+        <CharacterAbilityGivePermanentStat statidentifier="reactorfuel" stattype="IncreaseFabricationQuality" value="1" setvalue="true" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="robot_crafter_weapons">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,2" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_crafter_weapons" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="weapon" stattype="IncreaseFabricationQuality" value="1" setvalue="true" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="robot_crafter_power">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,5" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_crafter_power" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="mobilebattery" stattype="IncreaseFabricationQuality" value="1" setvalue="true" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="robot_crafter_speed">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_crafter_speed" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveItemStatToTags tags="fabricator" stattype="FabricationSpeed" value="1.5" />
+        <CharacterAbilityGiveItemStatToTags tags="deconstructor" stattype="DeconstructorSpeed" value="1.5" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="robot_crafter_refiner">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,3" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_crafter_refiner">
+      <Replace tag="[chance]" value="50" color="gui.green" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnItemDeconstructedMaterial">
+      <Conditions>
+        <AbilityConditionServerRandom randomchance="0.5" />
+        <AbilityConditionItem tags="ore" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="2" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
 </Talents>
