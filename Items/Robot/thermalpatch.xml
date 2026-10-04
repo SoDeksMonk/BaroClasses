@@ -19,35 +19,35 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="340,33,26,42" depth="0.6" origin="0.5,0.5" />
-    <Body width="25" height="40" density="15" />
-    <SuitableTreatment type="damage" suitability="50" />
-    <SuitableTreatment type="burn" suitability="30" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/minerals.png" sourcerect="4,171,54,27" depth="0.6" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredSkill identifier="mechanical" level="50" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
         <Sound file="Content/Items/Weapons/Smack1.ogg" range="400" />
       </StatusEffect>
-      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="This, Character">
-        <Conditional HasStatusTag="robot_frame" />
+      <!-- При использовании на роботе (с надетым каркасом): успешная заварка повреждений -->
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="This, UseTarget">
+        <Conditional robot_frame="gt 0" />
         <Sound file="Content/Items/Tools/WeldingLoop.ogg" range="400" />
         <ParticleEmitter particle="weldspark" particlespersecond="60" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="400" />
-        <ReduceAffliction type="damage" amount="40" />
-        <ReduceAffliction type="burn" amount="20" />
+        <ReduceAffliction type="damage" amount="20" />
+        <ReduceAffliction type="burn" amount="10" />
       </StatusEffect>
-      <StatusEffect statuseffecttags="medical" type="OnFailure" target="This, Character">
-        <Conditional HasStatusTag="robot_frame" />
+      <!-- При использовании на роботе при низком навыке механики: заварка слабее -->
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="This, UseTarget">
+        <Conditional robot_frame="gt 0" />
         <Sound file="Content/Items/Tools/WeldingLoop.ogg" range="400" />
         <ParticleEmitter particle="weldspark" particlespersecond="30" anglemin="-40" anglemax="40" velocitymin="50" velocitymax="200" />
         <ReduceAffliction type="damage" amount="20" />
         <ReduceAffliction type="burn" amount="10" />
       </StatusEffect>
-      <StatusEffect statuseffecttags="medical" type="OnUse" target="This, Character">
-        <Conditional HasStatusTag="!equals robot_frame" />
-        <Sound file="Content/Items/Weapons/Sizzle.ogg" range="500" />
+      <!-- При попытке применить раскалённую термозаплатку на человека без каркаса: лёгкий термический ожог -->
+      <StatusEffect statuseffecttags="medical" type="OnUse" target="This, UseTarget">
+        <Conditional robot_frame="lte 0" />
         <ParticleEmitter particle="fleshsmoke" particlespersecond="8" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="40" />
-        <Affliction identifier="burn" amount="15" />
+        <Affliction identifier="burn" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
