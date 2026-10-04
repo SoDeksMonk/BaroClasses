@@ -38,7 +38,7 @@
       <TalentOptions>
         <TalentOption identifier="robot_crafter_tier1" />
       </TalentOptions>
-      <TalentOptions>
+      <TalentOptions maxchosentalents="1">
         <TalentOption identifier="robot_crafter_weapons" />
         <TalentOption identifier="robot_crafter_power" />
       </TalentOptions>
