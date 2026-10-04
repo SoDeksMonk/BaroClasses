@@ -4,6 +4,7 @@
     <Item file="%ModDir%/Items/Robot/robotframeshell.xml"/>
     <Item file="%ModDir%/Items/Robot/robotupgrades.xml"/>
     <Item file="%ModDir%/Items/Robot/thermalpatch.xml"/>
+    <Afflictions file="%ModDir%/Afflictions.xml" />
     <Item file="%ModDir%/Items/Medic/medichelmet.xml"/>
     <Item file="%ModDir%/Items/Captain/caphelmet.xml"/>
 

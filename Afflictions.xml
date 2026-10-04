@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction
+    name="Robot Chassis Online"
+    identifier="robot_frame"
+    description=""
+    type="buff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="1">
+    <Effect minstrength="0" maxstrength="1">
+    </Effect>
+  </Affliction>
+</Afflictions>
