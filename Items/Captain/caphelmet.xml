@@ -20,14 +20,16 @@
         <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
             <Containable items="ethanol,rum,whiskey">
-                <!-- Тратит алкоголь в бутылке, пока персонаж НЕ пьян -->
-                <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
-                    <Conditional TargetContainer="true" TargetGrandparent="true" drunk="lte 10" />
+                <StatusEffect type="OnWearing" target="Contained" Condition="-1.0" comparison="And">
+                    <Conditional TargetContainer="true" TargetGrandparent="true" drunk="lte 30" />
                 </StatusEffect>
-                <!-- Накладывает опьянение на персонажа, пока уровень опьянения меньше или равен 10 -->
                 <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
-                    <Conditional drunk="lte 10" />
+                    <Conditional drunk="lte 30" />
                     <Affliction identifier="drunk" amount="2.0" />
+                </StatusEffect>
+                <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+                    <Conditional drunknodebuffs="lte 30" />
+                    <Affliction identifier="drunknodebuffs" amount="2.0" />
                 </StatusEffect>
             </Containable>
         </ItemContainer>

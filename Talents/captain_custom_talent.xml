@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
-    <Talent identifier="cap_def_helmet">
-        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,3" sheetelementsize="128,128"/>
-        <Description tag="talentdescription.unlockrecipe"/>
+    <Talent identifier="drunken_cap">
+        <Description tag="talentdescription.drunkensailor">
+            <Replace tag="[stunresistance]" value="75" color="gui.green"/>
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.cap_helmet" color="gui.orange"/>
+        </Description>
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="drunknodebuffs"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.25"/>
+                <CharacterAbilityModifyResistance resistanceid="nausea" multiplier="0"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Abilities>
+                <CharacterAbilityReplaceAffliction affliction="drunk" newaffliction="drunknodebuffs"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AddedRecipe itemidentifier="rum"/>
         <AddedRecipe itemidentifier="cap_helmet"/>
     </Talent>
 </Talents>
