@@ -5,6 +5,6 @@
   <talenttree.cap_loyalist>Лоялист</talenttree.cap_loyalist>
   <talenttree.cap_skipper>Шкипер</talenttree.cap_skipper>
   <talenttree.cap_gunsmith>Оружейник</talenttree.cap_gunsmith>
-  <talentdescription.big_gun>Убойный револьвер</talentdescription.big_gun>
-  <talentname.big_gun>Бомбарда</talentname.big_gun>
+  <talentdescription.cap_def_helmet>Хороший защитный берет</talentdescription.cap_def_helmet>
+  <talentname.cap_def_helmet>Берет капитана</talentname.cap_def_helmet>
 </infotexts>

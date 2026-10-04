@@ -1,1 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="cap_def_helmet">
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,3" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.unlockrecipe"/>
+        <AddedRecipe itemidentifier="cap_helmet"/>
+    </Talent>
+</Talents>

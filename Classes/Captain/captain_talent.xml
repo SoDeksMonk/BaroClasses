@@ -24,6 +24,7 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="specops"/>
+                <TalentOption identifier="cap_def_helmet"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="lonewolf"/>

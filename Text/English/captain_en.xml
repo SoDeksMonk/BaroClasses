@@ -5,6 +5,6 @@
   <talenttree.cap_loyalist>Loyalist</talenttree.cap_loyalist>
   <talenttree.cap_skipper>Skipper</talenttree.cap_skipper>
   <talenttree.cap_gunsmith>Gunsmith</talenttree.cap_gunsmith>
-  <talentdescription.big_gun>Death gun</talentdescription.big_gun>
-  <talentname.big_gun>Handcannon</talentname.big_gun>
+  <talentdescription.cap_def_helmet>Great defence cap</talentdescription.cap_def_helmet>
+  <talentname.cap_def_helmet>Cap helmet</talentname.cap_def_helmet>
 </infotexts>

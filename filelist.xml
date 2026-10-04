@@ -5,12 +5,13 @@
     <Item file="%ModDir%/Items/Robot/robotupgrades.xml"/>
     <Item file="%ModDir%/Items/Robot/thermalpatch.xml"/>
     <Item file="%ModDir%/Items/Medic/medichelmet.xml"/>
+    <Item file="%ModDir%/Items/Captain/caphelmet.xml"/>
 
     <Jobs file="%ModDir%/Classes/Captain/captain.xml" />
     <Jobs file="%ModDir%/Classes/Medic/medic.xml" />
     <Jobs file="%ModDir%/Classes/Robot/robot.xml" />
     
-    <!--Talents file="%ModDir%/Talents/captain_custom_talent.xml"/-->
+    <Talents file="%ModDir%/Talents/captain_custom_talent.xml"/>
     <Talents file="%ModDir%/Talents/medic_custom_talent.xml"/>
     <Talents file="%ModDir%/Talents/robot_custom_talent.xml"/>
     
