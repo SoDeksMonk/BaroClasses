@@ -10,8 +10,10 @@
     <Jobs file="%ModDir%/Classes/Medic/medic.xml" />
     <Jobs file="%ModDir%/Classes/Robot/robot.xml" />
     
-    <Talents file="%ModDir%/Talents/robot_custom_talent.xml"/>
+    <!--Talents file="%ModDir%/Talents/captain_custom_talent.xml"/-->
     <Talents file="%ModDir%/Talents/medic_custom_talent.xml"/>
+    <Talents file="%ModDir%/Talents/robot_custom_talent.xml"/>
+    
 
     <TalentTrees file="%ModDir%/Classes/Captain/captain_talent.xml" />
     <TalentTrees file="%ModDir%/Classes/Medic/medical_talent.xml" />
