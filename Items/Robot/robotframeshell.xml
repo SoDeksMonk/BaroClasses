@@ -25,6 +25,10 @@
       <StatusEffect type="OnWearing" target="Character">
         <Affliction identifier="robot_frame" strength="1" />
       </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9">
+        <Conditional HoldingItem="alienartifact,crate" />
+        <StatValue stattype="MovementSpeed" value="0.3" />
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
         <ReduceAffliction type="damage" amount="0.2" />
         <ReduceAffliction type="burn" amount="0.2" />

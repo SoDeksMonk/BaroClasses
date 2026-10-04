@@ -12,6 +12,7 @@
     showinhealthscannerthreshold="1000"
     maxstrength="1">
     <Effect minstrength="0" maxstrength="1">
+      <AbilityFlag flagtype="MoveNormallyWhileDragging" />
     </Effect>
   </Affliction>
 </Afflictions>
