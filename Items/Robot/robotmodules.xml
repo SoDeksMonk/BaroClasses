@@ -173,9 +173,11 @@
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_repair">
-        <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
-          <ReduceAffliction type="damage" amount="0.1" />
-          <ReduceAffliction type="burn" amount="0.1" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_repair_module" amount="1" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_repair_module" amount="1" />
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency">
@@ -242,9 +244,11 @@
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_repair">
-        <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
-          <ReduceAffliction type="damage" amount="0.1" />
-          <ReduceAffliction type="burn" amount="0.1" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_repair_module" amount="1" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_repair_module" amount="1" />
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency">

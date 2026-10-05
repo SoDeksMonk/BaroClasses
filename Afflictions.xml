@@ -72,4 +72,34 @@
       <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="0.6" />
     </Effect>
   </Affliction>
+  <Affliction
+    name="Robot Repair Subsystem"
+    identifier="robot_repair_module"
+    description=""
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.1" />
+        <ReduceAffliction type="burn" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="2">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.2" />
+        <ReduceAffliction type="burn" amount="0.2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="2" maxstrength="3">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.3" />
+        <ReduceAffliction type="burn" amount="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
 </Afflictions>
