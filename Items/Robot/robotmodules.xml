@@ -9,7 +9,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -32,7 +32,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -54,7 +54,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -76,7 +76,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -95,7 +95,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -118,7 +118,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="50" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -140,7 +140,7 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="50" />
       <RequiredItem identifier="robotmodule_efficiency" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -162,7 +162,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
