@@ -171,13 +171,19 @@
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency">
-        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
-          <GiveAffliction identifier="robot_efficiency_module" strength="1" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_efficiency_module" amount="2" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_efficiency_module" amount="2" />
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency_overclock">
-        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
-          <GiveAffliction identifier="robot_efficiency_module" strength="2" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_efficiency_module" amount="3" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_efficiency_module" amount="3" />
         </StatusEffect>
       </Containable>
     </ItemContainer>
@@ -226,13 +232,19 @@
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency">
-        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
-          <GiveAffliction identifier="robot_efficiency_module" strength="1" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_efficiency_module" amount="2" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_efficiency_module" amount="2" />
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_efficiency_overclock">
-        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
-          <GiveAffliction identifier="robot_efficiency_module" strength="2" />
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_efficiency_module" amount="3" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_efficiency_module" amount="3" />
         </StatusEffect>
       </Containable>
     </ItemContainer>

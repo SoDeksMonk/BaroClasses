@@ -25,7 +25,7 @@
     indicatorlimb="Torso"
     showiconthreshold="1000"
     showinhealthscannerthreshold="1000"
-    maxstrength="5">
-    <Effect minstrength="0" maxstrength="5" strengthchange="-1.5" />
+    maxstrength="9">
+    <Effect minstrength="0" maxstrength="9" strengthchange="0" />
   </Affliction>
 </Afflictions>
