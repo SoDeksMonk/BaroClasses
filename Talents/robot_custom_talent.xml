@@ -112,13 +112,13 @@
   </Talent>
   <!-- Ветка специализации «Аугментация» -->
   <Talent identifier="robot_modules_tier1">
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="6,5" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,7" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_tier1" />
     <AddedRecipe itemidentifier="robotmodule_speed" />
     <AddedRecipe itemidentifier="robotmodule_armor" />
   </Talent>
   <Talent identifier="robot_modules_combat">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,2" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_combat" />
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Conditions>
@@ -133,18 +133,18 @@
     <AddedRecipe itemidentifier="robotmodule_ranged" />
   </Talent>
   <Talent identifier="robot_modules_system">
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,5" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_system" />
     <AddedRecipe itemidentifier="robotmodule_repair" />
     <AddedRecipe itemidentifier="robotmodule_efficiency" />
   </Talent>
   <Talent identifier="robot_modules_tier3">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,5" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_tier3" />
     <AddedRecipe itemidentifier="robotmodule_expansion" />
   </Talent>
   <Talent identifier="robot_modules_overclock">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,3" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_overclock" />
     <AbilityGroupInterval interval="0.9">
       <Conditions>

@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="Robot Shell" identifier="robotframeshell" category="Diving,Equipment" tags="clothing,human,diving,deepdiving,deepdivinglarge" scale="0.52" canbepicked="false" fireproof="true" impactsoundtag="impact_metal_heavy">
+  <Item name="Robot Shell" identifier="robotframeshell" category="Diving,Equipment" tags="clothing,human,diving,deepdiving,deepdivinglarge" scale="0.52" canbepicked="false" allowdroppingonswapwith="false" fireproof="true" impactsoundtag="impact_metal_heavy">
     <InventoryIcon texture="%ModDir%/Items/Robot/Exosuit.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
     <Sprite name="Robot Shell" texture="%ModDir%/Items/Robot/Exosuit.png" sourcerect="2,266,203,244" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="230" density="30" />
     <!-- Powers the vanilla Voltage-based movement lock; fuel sets Voltage while contained. -->
     <Powered PowerConsumption="10.0" IsActive="true" />
-    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="false" allowusewhenworn="true">
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="geneticmaterialdebuff" damagemultiplier="0.0" probabilitymultiplier="0.0" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" canbeselected="true" canbepicked="false" allowusewhenworn="true">
       <sprite name="Robot Shell Helmet" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="false" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <sprite name="Robot Shell Torso" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193" />
       <sprite name="Robot Shell Right Hand" texture="%ModDir%/Items/Robot/Exosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="383,160,64,48" />
@@ -58,8 +57,11 @@
       <StatValue stattype="FlowResistance" value="1.0" />
       <StatValue stattype="PropulsionSpeed" value="-0.75" />
     </Wearable>
-    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+    <ItemContainer capacity="0" canbeselected="true" hideitems="true" keepopenwhenequipped="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,32,32,32" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="divingsuitfuel">
           <StatusEffect type="OnContaining" target="This,Character" Voltage="1.0" setvalue="true">

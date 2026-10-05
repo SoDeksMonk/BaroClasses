@@ -11,7 +11,7 @@
     showiconthreshold="1000"
     showinhealthscannerthreshold="1000"
     maxstrength="1">
-    <Effect minstrength="0" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="geneticmaterialdebuff" minresistance="1.0" maxresistance="1.0">
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
     </Effect>
   </Affliction>
