@@ -15,4 +15,17 @@
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
     </Effect>
   </Affliction>
+  <Affliction
+    name="Robot Efficiency Subsystem"
+    identifier="robot_efficiency_module"
+    description=""
+    type="buff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="5">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1.5" />
+  </Affliction>
 </Afflictions>

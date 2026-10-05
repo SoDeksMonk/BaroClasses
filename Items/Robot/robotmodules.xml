@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- 1. Модуль сервопривода (Скорость бега и плавания +5%) -->
-  <Item name="" identifier="robotmodule_speed" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_speed" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_speed" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_speed" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="120" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" />
@@ -17,14 +17,10 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <StatusEffect type="OnContained" target="Character">
-      <StatValue stattype="MovementSpeed" value="0.05" />
-      <StatValue stattype="SwimmingSpeed" value="0.05" />
-    </StatusEffect>
   </Item>
 
   <!-- 2. Модуль бронепластины (Сопротивление физ. урону +3%) -->
-  <Item name="" identifier="robotmodule_armor" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_armor" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_armor" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_armor" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="120" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" />
@@ -40,13 +36,10 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="32,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <StatusEffect type="OnContained" target="Character">
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.97" damagesound="LimbArmor" />
-    </StatusEffect>
   </Item>
 
   <!-- 3. Модуль ближнего боя (Урон ближнего боя +20%) -->
-  <Item name="" identifier="robotmodule_melee" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_melee" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_melee" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_melee" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="180" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" />
@@ -62,13 +55,10 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <StatusEffect type="OnContained" target="Character">
-      <StatValue stattype="MeleeAttackMultiplier" value="0.2" />
-    </StatusEffect>
   </Item>
 
   <!-- 4. Модуль баллистики (Урон дальнего боя +8%) -->
-  <Item name="" identifier="robotmodule_ranged" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_ranged" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_ranged" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_ranged" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="180" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" />
@@ -87,7 +77,7 @@
   </Item>
 
   <!-- 5. Модуль авторемонта (Пассивный реген +0.1 HP/сек) -->
-  <Item name="" identifier="robotmodule_repair" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_repair" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_repair" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_repair" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="250" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" amount="2" />
@@ -103,14 +93,10 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="128,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <StatusEffect type="OnContained" target="Character" interval="1" disabledeltatime="true">
-      <ReduceAffliction type="damage" amount="0.1" />
-      <ReduceAffliction type="burn" amount="0.1" />
-    </StatusEffect>
   </Item>
 
   <!-- 6. Модуль энергоэффективности (Уменьшает расход стержня на 0.02) -->
-  <Item name="" identifier="robotmodule_efficiency" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_efficiency" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="250" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" amount="2" />
@@ -126,12 +112,8 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <!-- Компенсирует 0.02 расхода стержня каждую секунду при установке в каркас -->
-    <StatusEffect type="OnContained" target="Contained,Character" Condition="0.02" interval="1" disabledeltatime="true" targetslot="0">
-      <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-    </StatusEffect>
   </Item>
-  <Item name="" identifier="robotmodule_efficiency_overclock" category="Equipment,Electrical" tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_efficiency_overclock" category="Equipment,Electrical" tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="400" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" amount="3" />
@@ -148,9 +130,6 @@
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <StatusEffect type="OnContained" target="Contained,Character" Condition="0.03" interval="1" disabledeltatime="true" targetslot="0">
-      <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-    </StatusEffect>
   </Item>
 
   <!-- The interface is crafted only after the Basic Modules talent and occupies the Headset slot. -->
@@ -169,6 +148,38 @@
       <SlotIcon slotindex="0" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
       <Containable items="robot_module" />
+      <Containable items="robotmodule_speed">
+        <StatusEffect type="OnWearing" target="Character">
+          <StatValue stattype="MovementSpeed" value="0.05" />
+          <StatValue stattype="SwimmingSpeed" value="0.05" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_armor">
+        <StatusEffect type="OnWearing" target="Character">
+          <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.97" damagesound="LimbArmor" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_melee">
+        <StatusEffect type="OnWearing" target="Character">
+          <StatValue stattype="MeleeAttackMultiplier" value="0.2" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_repair">
+        <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+          <ReduceAffliction type="damage" amount="0.1" />
+          <ReduceAffliction type="burn" amount="0.1" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_efficiency">
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+          <GiveAffliction identifier="robot_efficiency_module" strength="1" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_efficiency_overclock">
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+          <GiveAffliction identifier="robot_efficiency_module" strength="2" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
@@ -192,6 +203,38 @@
       <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
       <SlotIcon slotindex="2" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,32,32,32" origin="0.5,0.5" />
       <Containable items="robot_module" />
+      <Containable items="robotmodule_speed">
+        <StatusEffect type="OnWearing" target="Character">
+          <StatValue stattype="MovementSpeed" value="0.05" />
+          <StatValue stattype="SwimmingSpeed" value="0.05" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_armor">
+        <StatusEffect type="OnWearing" target="Character">
+          <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.97" damagesound="LimbArmor" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_melee">
+        <StatusEffect type="OnWearing" target="Character">
+          <StatValue stattype="MeleeAttackMultiplier" value="0.2" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_repair">
+        <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+          <ReduceAffliction type="damage" amount="0.1" />
+          <ReduceAffliction type="burn" amount="0.1" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_efficiency">
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+          <GiveAffliction identifier="robot_efficiency_module" strength="1" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_efficiency_overclock">
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+          <GiveAffliction identifier="robot_efficiency_module" strength="2" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Expanded Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
