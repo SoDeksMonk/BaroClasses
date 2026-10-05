@@ -149,7 +149,7 @@
     <Description tag="talentdescription.robot_modules_overclock" />
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasItem tags="robotmodule_speed" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_speed_module" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.025" />
@@ -158,7 +158,7 @@
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasItem tags="robotmodule_armor" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_armor_module" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.985" />
@@ -166,7 +166,7 @@
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasItem tags="robotmodule_melee" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_melee_module" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1" />
@@ -174,7 +174,7 @@
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="1.0">
       <Conditions>
-        <AbilityConditionHasItem tags="robotmodule_repair" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_repair_module" />
       </Conditions>
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
