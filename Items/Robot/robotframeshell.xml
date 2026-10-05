@@ -70,6 +70,9 @@
       <SubContainer capacity="2" maxstacksize="1">
         <Containable items="robot_module" />
       </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="robotmodule_expansion" />
+      </SubContainer>
       <SubContainer capacity="12" maxstacksize="32">
         <Containable items="smallitem" />
       </SubContainer>

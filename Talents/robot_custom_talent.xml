@@ -110,4 +110,91 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <!-- Ветка специализации «Аугментация» -->
+  <Talent identifier="robot_modules_tier1">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="6,5" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_modules_tier1" />
+    <AddedRecipe itemidentifier="robotmodule_speed" />
+    <AddedRecipe itemidentifier="robotmodule_armor" />
+  </Talent>
+  <Talent identifier="robot_modules_combat">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,2" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_modules_combat" />
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_ranged" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="robotmodule_melee" />
+    <AddedRecipe itemidentifier="robotmodule_ranged" />
+  </Talent>
+  <Talent identifier="robot_modules_system">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,5" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_modules_system" />
+    <AddedRecipe itemidentifier="robotmodule_repair" />
+    <AddedRecipe itemidentifier="robotmodule_efficiency" />
+  </Talent>
+  <Talent identifier="robot_modules_tier3">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_modules_tier3" />
+    <AddedRecipe itemidentifier="robotmodule_expansion" />
+  </Talent>
+  <Talent identifier="robot_modules_overclock">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,3" sheetelementsize="128,128" />
+    <Description tag="talentdescription.robot_modules_overclock" />
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_speed" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.025" />
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.025" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_armor" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.985" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_melee" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="1.0">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_repair" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+              <ReduceAffliction type="damage" amount="0.05" />
+              <ReduceAffliction type="burn" amount="0.05" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasItem tags="robotmodule_ranged" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.04" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="robotmodule_efficiency_overclock" />
+  </Talent>
 </Talents>
