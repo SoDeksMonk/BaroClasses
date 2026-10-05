@@ -19,7 +19,7 @@
     name="Robot Efficiency Subsystem"
     identifier="robot_efficiency_module"
     description=""
-    type="buff"
+    type="talentbuff"
     isbuff="true"
     limbspecific="false"
     indicatorlimb="Torso"
@@ -27,5 +27,49 @@
     showinhealthscannerthreshold="1000"
     maxstrength="9">
     <Effect minstrength="0" maxstrength="9" strengthchange="0" />
+  </Affliction>
+  <Affliction
+    name="Robot Servo Subsystem"
+    identifier="robot_speed_module"
+    description=""
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0">
+      <StatValue stattype="MovementSpeed" minvalue="0.0" maxvalue="0.15" />
+      <StatValue stattype="SwimmingSpeed" minvalue="0.0" maxvalue="0.15" />
+    </Effect>
+  </Affliction>
+  <Affliction
+    name="Robot Plating Subsystem"
+    identifier="robot_armor_module"
+    description=""
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="damage" minresistance="0.0" maxresistance="0.09" />
+  </Affliction>
+  <Affliction
+    name="Robot Melee Subsystem"
+    identifier="robot_melee_module"
+    description=""
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="0.6" />
+    </Effect>
   </Affliction>
 </Afflictions>

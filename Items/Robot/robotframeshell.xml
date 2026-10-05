@@ -52,55 +52,47 @@
         <Conditional robot_efficiency_module="gte 2" />
         <Conditional robot_efficiency_module="lt 3" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.03" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 3" />
         <Conditional robot_efficiency_module="lt 4" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.04" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 4" />
         <Conditional robot_efficiency_module="lt 5" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.05" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 5" />
         <Conditional robot_efficiency_module="lt 6" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.06" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 6" />
         <Conditional robot_efficiency_module="lt 7" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.07" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 7" />
         <Conditional robot_efficiency_module="lt 8" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.08" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 8" />
         <Conditional robot_efficiency_module="lt 9" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" Condition="0.09" interval="1" disabledeltatime="true" targetslot="0" conditionalcomparison="And">
         <Conditional IsDead="false" />
         <Conditional robot_efficiency_module="gte 9" />
         <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
-        <RequiredItem items="robotmodule_interface,robotmodule_expansion" type="Equipped" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="-10.0" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
