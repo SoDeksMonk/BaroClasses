@@ -172,6 +172,14 @@
           <ReduceAffliction identifier="robot_melee_module" amount="1" />
         </StatusEffect>
       </Containable>
+      <Containable items="robotmodule_ranged">
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_ranged_module" amount="1" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_ranged_module" amount="1" />
+        </StatusEffect>
+      </Containable>
       <Containable items="robotmodule_repair">
         <StatusEffect type="OnInserted" target="Character">
           <Affliction identifier="robot_repair_module" amount="1" />
@@ -241,6 +249,14 @@
         </StatusEffect>
         <StatusEffect type="OnRemoved" target="Character">
           <ReduceAffliction identifier="robot_melee_module" amount="1" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="robotmodule_ranged">
+        <StatusEffect type="OnInserted" target="Character">
+          <Affliction identifier="robot_ranged_module" amount="1" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="Character">
+          <ReduceAffliction identifier="robot_ranged_module" amount="1" />
         </StatusEffect>
       </Containable>
       <Containable items="robotmodule_repair">

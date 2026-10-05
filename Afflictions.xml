@@ -102,4 +102,17 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+  <Affliction
+    name="Robot Ballistics Subsystem"
+    identifier="robot_ranged_module"
+    description=""
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    showiconthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+  </Affliction>
 </Afflictions>
