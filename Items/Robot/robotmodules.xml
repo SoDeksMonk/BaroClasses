@@ -9,8 +9,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
       <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,0,32,32" origin="0.5,0.5" />
@@ -31,8 +32,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="titanium" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="32,0,32,32" origin="0.5,0.5" />
@@ -52,8 +54,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,0,32,32" origin="0.5,0.5" />
@@ -73,8 +76,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="lead" amount="2" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,0,32,32" origin="0.5,0.5" />
@@ -91,8 +95,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredItem identifier="fpgacircuit" amount="2" />
-      <RequiredItem identifier="tin" amount="2" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="128,0,32,32" origin="0.5,0.5" />
@@ -113,8 +118,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="50" />
-      <RequiredItem identifier="fpgacircuit" amount="2" />
-      <RequiredItem identifier="fulgurium" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
@@ -134,9 +140,9 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="50" />
       <RequiredItem identifier="robotmodule_efficiency" />
-      <RequiredItem identifier="robotmodule_efficiency" />
-      <RequiredItem identifier="fpgacircuit" amount="3" />
-      <RequiredItem identifier="fulgurium" amount="2" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
@@ -156,8 +162,9 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredItem identifier="fpgacircuit" amount="2" />
-      <RequiredItem identifier="titanium" />
+      <RequiredItem items="abscomponent,acoscomponent,addercomponent,andcomponent,asincomponent,atancomponent,ceilcomponent,colorcomponent,concatcomponent,coscomponent,delaycomponent,demultiplexercomponent,dividecomponent,equalscomponent,factorialcomponent,floorcomponent,greatercomponent,memorycomponent,modulocomponent,multiplexercomponent,multiplycomponent,notcomponent,orcomponent,powcomponent,regexcomponent,relaycomponent,roundcomponent,signalcheckcomponent,sincomponent,squarerootcomponent,subtractcomponent,tancomponent,xorcomponent" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,32,32,32" origin="0.5,0.5" />
