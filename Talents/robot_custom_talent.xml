@@ -116,6 +116,7 @@
     <Description tag="talentdescription.robot_modules_tier1" />
     <AddedRecipe itemidentifier="robotmodule_speed" />
     <AddedRecipe itemidentifier="robotmodule_armor" />
+    <AddedRecipe itemidentifier="robotmodule_interface" />
   </Talent>
   <Talent identifier="robot_modules_combat">
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,1" sheetelementsize="128,128" />

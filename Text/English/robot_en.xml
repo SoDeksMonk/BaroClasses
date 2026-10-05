@@ -44,17 +44,19 @@
   <talentname.robot_clothes_fabrication>Layered Protection</talentname.robot_clothes_fabrication>
   <talenttree.robot_modules>Augmentation</talenttree.robot_modules>
   <talentname.robot_modules_tier1>Basic Modules</talentname.robot_modules_tier1>
-  <talentdescription.robot_modules_tier1>Unlocks fabrication of the Servo and Armor Plating modules.</talentdescription.robot_modules_tier1>
+  <talentdescription.robot_modules_tier1>Unlocks fabrication of two modules and a headset with two module sockets.</talentdescription.robot_modules_tier1>
   <talentname.robot_modules_combat>Combat Protocols</talentname.robot_modules_combat>
   <talentdescription.robot_modules_combat>Unlocks fabrication of the Melee and Ballistics modules. Choosing this branch locks System Protocols.</talentdescription.robot_modules_combat>
   <talentname.robot_modules_system>System Protocols</talentname.robot_modules_system>
   <talentdescription.robot_modules_system>Unlocks fabrication of the Auto-Repair and Efficiency modules. Choosing this branch locks Combat Protocols.</talentdescription.robot_modules_system>
   <talentname.robot_modules_tier3>Expansion Bus</talentname.robot_modules_tier3>
-  <talentdescription.robot_modules_tier3>Unlocks a third module slot in the frame.</talentdescription.robot_modules_tier3>
+  <talentdescription.robot_modules_tier3>Unlocks an expanded headset with three module sockets. Wear it instead of the basic module interface.</talentdescription.robot_modules_tier3>
   <talentname.robot_modules_overclock>Clock Speed Overclock</talentname.robot_modules_overclock>
   <talentdescription.robot_modules_overclock>Increases the effectiveness of installed modules by 50%.</talentdescription.robot_modules_overclock>
-  <entityname.robotmodule_expansion>Module Expansion Bus</entityname.robotmodule_expansion>
-  <entitydescription.robotmodule_expansion>An adapter with one additional module socket. Installs into the dedicated expansion bay in the frame.</entitydescription.robotmodule_expansion>
+  <entityname.robotmodule_interface>Module Interface</entityname.robotmodule_interface>
+  <entitydescription.robotmodule_interface>A headset with two sockets for robot modules. The slots are available while the interface is worn.</entitydescription.robotmodule_interface>
+  <entityname.robotmodule_expansion>Expanded Module Interface</entityname.robotmodule_expansion>
+  <entitydescription.robotmodule_expansion>A headset with three sockets for robot modules. Unlocked by the Expansion Bus talent and replaces the basic interface.</entitydescription.robotmodule_expansion>
   <entityname.robotmodule_efficiency_overclock>Overclocked Efficiency Module</entityname.robotmodule_efficiency_overclock>
   <entitydescription.robotmodule_efficiency_overclock>An upgraded Efficiency Module that further reduces fuel rod consumption.</entitydescription.robotmodule_efficiency_overclock>
 </infotexts>

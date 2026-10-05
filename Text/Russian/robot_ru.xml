@@ -44,17 +44,19 @@
   <talentname.robot_clothes_fabrication>Многослойная защита</talentname.robot_clothes_fabrication>
   <talenttree.robot_modules>Аугментация</talenttree.robot_modules>
   <talentname.robot_modules_tier1>Базовые модули</talentname.robot_modules_tier1>
-  <talentdescription.robot_modules_tier1>Открывает изготовление модулей сервопривода и бронепластины.</talentdescription.robot_modules_tier1>
+  <talentdescription.robot_modules_tier1>Открывает изготовление двух модулей и гарнитуры с двумя слотами для установки модулей.</talentdescription.robot_modules_tier1>
   <talentname.robot_modules_combat>Боевые протоколы</talentname.robot_modules_combat>
   <talentdescription.robot_modules_combat>Открывает изготовление модулей ближнего боя и баллистики. Выбор этой ветки закрывает системные протоколы.</talentdescription.robot_modules_combat>
   <talentname.robot_modules_system>Системные протоколы</talentname.robot_modules_system>
   <talentdescription.robot_modules_system>Открывает изготовление модулей авторемонта и энергоэффективности. Выбор этой ветки закрывает боевые протоколы.</talentdescription.robot_modules_system>
   <talentname.robot_modules_tier3>Шина расширения</talentname.robot_modules_tier3>
-  <talentdescription.robot_modules_tier3>Открывает третий слот для модуля в каркасе.</talentdescription.robot_modules_tier3>
+  <talentdescription.robot_modules_tier3>Открывает изготовление расширенной гарнитуры с тремя слотами для модулей. Наденьте её вместо базового интерфейса модулей.</talentdescription.robot_modules_tier3>
   <talentname.robot_modules_overclock>Разгон тактовой частоты</talentname.robot_modules_overclock>
   <talentdescription.robot_modules_overclock>Увеличивает эффективность установленных модулей на 50%.</talentdescription.robot_modules_overclock>
-  <entityname.robotmodule_expansion>Шина расширения модулей</entityname.robotmodule_expansion>
-  <entitydescription.robotmodule_expansion>Адаптер с дополнительным гнездом для одного модуля. Устанавливается в специальный отсек каркаса.</entitydescription.robotmodule_expansion>
+  <entityname.robotmodule_interface>Интерфейс модулей</entityname.robotmodule_interface>
+  <entitydescription.robotmodule_interface>Гарнитура с двумя гнёздами для модулей робота. Слоты доступны, когда интерфейс надет.</entitydescription.robotmodule_interface>
+  <entityname.robotmodule_expansion>Расширенный интерфейс модулей</entityname.robotmodule_expansion>
+  <entitydescription.robotmodule_expansion>Гарнитура с тремя гнёздами для модулей робота. Разблокируется талантом «Шина расширения» и заменяет базовый интерфейс.</entitydescription.robotmodule_expansion>
   <entityname.robotmodule_efficiency_overclock>Разогнанный модуль энергоэффективности</entityname.robotmodule_efficiency_overclock>
   <entitydescription.robotmodule_efficiency_overclock>Усиленная версия модуля энергоэффективности, дополнительно снижает расход топливного стержня.</entitydescription.robotmodule_efficiency_overclock>
 </infotexts>

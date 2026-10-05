@@ -153,26 +153,48 @@
     </StatusEffect>
   </Item>
 
-  <!-- Tier-3 expansion bay: one additional module slot, enabled by the Augmentation talent. -->
-  <Item name="" identifier="robotmodule_expansion" category="Equipment,Electrical" tags="smallitem,robotmodule_expansion" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <!-- The interface is crafted only after the Basic Modules talent and occupies the Headset slot. -->
+  <Item name="" identifier="robotmodule_interface" category="Equipment,Electrical" tags="smallitem,robotmodule_interface" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="300" sold="false" />
-    <Deconstruct time="5">
-      <Item identifier="fpgacircuit" amount="2" />
-      <Item identifier="titanium" />
-    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem tag="logic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="244,62,76,65" origin="0.5,0.5" />
+    <Sprite name="Robot Module Interface" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="25" />
+    <ItemContainer capacity="2" canbeselected="true" hideitems="false" slotsperrow="2" msg="ItemMsgInteractSelect">
+      <SlotIcon slotindex="0" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
+      <Containable items="robot_module" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Robot Module Interface Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
+    </Wearable>
+  </Item>
+
+  <!-- Tier-3 interface: the third slot exists only on this talent-unlocked headset. -->
+  <Item name="" identifier="robotmodule_expansion" category="Equipment,Electrical" tags="smallitem,robotmodule_expansion" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="400" sold="false" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredItem tag="logic" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,32,32,32" origin="0.5,0.5" />
-    <Body width="30" height="30" density="15" />
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="1" maxstacksize="1" canbeselected="true" hideitems="false" slotsperrow="1">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="244,62,76,65" origin="0.5,0.5" />
+    <Sprite name="Robot Module Interface Expanded" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="25" />
+    <ItemContainer capacity="3" canbeselected="true" hideitems="false" slotsperrow="3" msg="ItemMsgInteractSelect">
+      <SlotIcon slotindex="0" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,32,32,32" origin="0.5,0.5" />
       <Containable items="robot_module" />
     </ItemContainer>
+    <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Robot Module Interface Expanded Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
+    </Wearable>
   </Item>
 </Items>

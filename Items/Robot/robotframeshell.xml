@@ -59,21 +59,12 @@
     </Wearable>
     <ItemContainer capacity="0" canbeselected="true" hideitems="true" keepopenwhenequipped="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
-      <SlotIcon slotindex="2" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
-      <SlotIcon slotindex="3" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,32,32,32" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="divingsuitfuel">
           <StatusEffect type="OnContaining" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
           </StatusEffect>
         </Containable>
-      </SubContainer>
-      <SubContainer capacity="2" maxstacksize="1">
-        <Containable items="robot_module" />
-      </SubContainer>
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="robotmodule_expansion" />
       </SubContainer>
       <SubContainer capacity="12" maxstacksize="32">
         <Containable items="smallitem" />
