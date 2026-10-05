@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- 1. Модуль сервопривода (Скорость бега и плавания +5%) -->
+  <Item name="" identifier="robotmodule_speed" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="120" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <StatusEffect type="OnContained" target="Character">
+      <StatValue stattype="MovementSpeed" value="0.05" />
+      <StatValue stattype="SwimmingSpeed" value="0.05" />
+    </StatusEffect>
+  </Item>
+
+  <!-- 2. Модуль бронепластины (Сопротивление физ. урону +3%) -->
+  <Item name="" identifier="robotmodule_armor" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="120" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="titanium" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="32,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <StatusEffect type="OnContained" target="Character">
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.97" damagesound="LimbArmor" />
+    </StatusEffect>
+  </Item>
+
+  <!-- 3. Модуль ближнего боя (Урон ближнего боя +20%) -->
+  <Item name="" identifier="robotmodule_melee" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="180" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <StatusEffect type="OnContained" target="Character">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.2" />
+    </StatusEffect>
+  </Item>
+
+  <!-- 4. Модуль баллистики (Урон дальнего боя +8%) -->
+  <Item name="" identifier="robotmodule_ranged" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="180" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="lead" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="lead" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <StatusEffect type="OnContained" target="Character">
+      <StatValue stattype="RangedAttackSpeed" value="0.08" />
+    </StatusEffect>
+  </Item>
+
+  <!-- 5. Модуль авторемонта (Пассивный реген +0.1 HP/сек) -->
+  <Item name="" identifier="robotmodule_repair" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="250" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" amount="2" />
+      <Item identifier="tin" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="tin" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="128,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <StatusEffect type="OnContained" target="Character" interval="1" disabledeltatime="true">
+      <ReduceAffliction type="damage" amount="0.1" />
+      <ReduceAffliction type="burn" amount="0.1" />
+    </StatusEffect>
+  </Item>
+
+  <!-- 6. Модуль энергоэффективности (Уменьшает расход стержня на 0.02) -->
+  <Item name="" identifier="robotmodule_efficiency" category="Equipment,Electrical" Tags="smallitem,robot_module" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+    <Price baseprice="250" sold="false" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" amount="2" />
+      <Item identifier="fulgurium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="electrical" level="50" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="fulgurium" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
+    <Body width="30" height="30" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <!-- Компенсирует 0.02 расхода стержня каждую секунду при установке в каркас -->
+    <StatusEffect type="OnContained" target="Contained,Character" Condition="0.02" interval="1" disabledeltatime="true" targetslot="0">
+      <RequiredItem items="divingsuitfuel" targetslot="0" type="Contained" />
+    </StatusEffect>
+  </Item>
+</Items>

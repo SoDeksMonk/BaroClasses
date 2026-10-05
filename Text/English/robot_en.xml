@@ -25,6 +25,18 @@
   <talentdescription.robot_crafter_speed>Fabricators and deconstructors operate 50% faster.</talentdescription.robot_crafter_speed>
   <talentname.robot_crafter_refiner>Mineral Enrichment</talentname.robot_crafter_refiner>
   <talentdescription.robot_crafter_refiner>When deconstructing raw ores and minerals, you have a [chance]% chance to extract double the materials.</talentdescription.robot_crafter_refiner>
+  <entityname.robotmodule_speed>Servo Module</entityname.robotmodule_speed>
+  <entitydescription.robotmodule_speed>Hardware coprocessor for the internal bus. Increases movement and swimming speed by 5%.</entitydescription.robotmodule_speed>
+  <entityname.robotmodule_armor>Armor Plating Module</entityname.robotmodule_armor>
+  <entitydescription.robotmodule_armor>Hardware coprocessor for the internal bus. Increases physical damage resistance by 3%.</entitydescription.robotmodule_armor>
+  <entityname.robotmodule_melee>Melee Accelerator Module</entityname.robotmodule_melee>
+  <entitydescription.robotmodule_melee>Hardware coprocessor for the internal bus. Increases melee damage by 20%.</entitydescription.robotmodule_melee>
+  <entityname.robotmodule_ranged>Ballistics Module</entityname.robotmodule_ranged>
+  <entitydescription.robotmodule_ranged>Hardware coprocessor for the internal bus. Increases ranged attack power and rate of fire by 8%.</entitydescription.robotmodule_ranged>
+  <entityname.robotmodule_repair>Auto-Repair Module</entityname.robotmodule_repair>
+  <entitydescription.robotmodule_repair>Hardware coprocessor for the internal bus. Provides 0.1 HP/s passive chassis self-repair.</entitydescription.robotmodule_repair>
+  <entityname.robotmodule_efficiency>Efficiency Module</entityname.robotmodule_efficiency>
+  <entitydescription.robotmodule_efficiency>Hardware coprocessor for the internal bus. Reduces fuel rod consumption in the frame by 0.02 Condition per second.</entitydescription.robotmodule_efficiency>
   <talentname.robot_cap_fabrication>Reinforced Headgear</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Overclocked Strikes</talentname.robot_melee_power>
   <talentname.robot_melee_defense>Reactive Armor</talentname.robot_melee_defense>

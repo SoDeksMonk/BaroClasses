@@ -25,6 +25,18 @@
   <talentdescription.robot_crafter_speed>Скорость работы фабрикаторов и деконструкторов увеличивается на 50%.</talentdescription.robot_crafter_speed>
   <talentname.robot_crafter_refiner>Обогащение руды</talentname.robot_crafter_refiner>
   <talentdescription.robot_crafter_refiner>При переработке сырой руды и минералов в деконструкторе есть [chance]% шанс получить вдвое больше материалов.</talentdescription.robot_crafter_refiner>
+  <entityname.robotmodule_speed>Модуль сервопривода</entityname.robotmodule_speed>
+  <entitydescription.robotmodule_speed>Аппаратный микропроцессор для внутренней шины робота. Увеличивает скорость перемещения и плавания на 5%.</entitydescription.robotmodule_speed>
+  <entityname.robotmodule_armor>Модуль бронепластины</entityname.robotmodule_armor>
+  <entitydescription.robotmodule_armor>Аппаратный микропроцессор для внутренней шины робота. Увеличивает сопротивление физическому урону на 3%.</entitydescription.robotmodule_armor>
+  <entityname.robotmodule_melee>Модуль ближнего боя</entityname.robotmodule_melee>
+  <entitydescription.robotmodule_melee>Аппаратный микропроцессор для внутренней шины робота. Увеличивает урон в ближнем бою на 20%.</entitydescription.robotmodule_melee>
+  <entityname.robotmodule_ranged>Модуль баллистики</entityname.robotmodule_ranged>
+  <entitydescription.robotmodule_ranged>Аппаратный микропроцессор для внутренней шины робота. Увеличивает урон и темп дальнего боя на 8%.</entitydescription.robotmodule_ranged>
+  <entityname.robotmodule_repair>Модуль авторемонта</entityname.robotmodule_repair>
+  <entitydescription.robotmodule_repair>Аппаратный микропроцессор для внутренней шины робота. Добавляет пассивное самовосстановление корпуса на 0.1 HP в секунду.</entitydescription.robotmodule_repair>
+  <entityname.robotmodule_efficiency>Модуль энергоэффективности</entityname.robotmodule_efficiency>
+  <entitydescription.robotmodule_efficiency>Аппаратный микропроцессор для внутренней шины робота. Снижает расход топливного стержня в каркасе на 0.02 единицы в секунду.</entitydescription.robotmodule_efficiency>
   <talentname.robot_cap_fabrication>Усиленная экипировка головы</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Усиленный удар</talentname.robot_melee_power>
   <talentname.robot_melee_defense>Реактивная броня</talentname.robot_melee_defense>

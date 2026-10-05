@@ -7,6 +7,7 @@
     <!-- Powers the vanilla Voltage-based movement lock; fuel sets Voltage while contained. -->
     <Powered PowerConsumption="10.0" IsActive="true" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="false" allowusewhenworn="true">
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="geneticmaterialdebuff" damagemultiplier="0.0" probabilitymultiplier="0.0" />
       <sprite name="Robot Shell Helmet" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="false" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <sprite name="Robot Shell Torso" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193" />
       <sprite name="Robot Shell Right Hand" texture="%ModDir%/Items/Robot/Exosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="383,160,64,48" />
@@ -65,6 +66,9 @@
             <Conditional IsDead="false" />
           </StatusEffect>
         </Containable>
+      </SubContainer>
+      <SubContainer capacity="2" maxstacksize="1">
+        <Containable items="robot_module" />
       </SubContainer>
       <SubContainer capacity="12" maxstacksize="32">
         <Containable items="smallitem" />
