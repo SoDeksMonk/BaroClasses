@@ -39,7 +39,7 @@
     showiconthreshold="1000"
     showinhealthscannerthreshold="1000"
     maxstrength="3">
-    <Effect minstrength="0" maxstrength="3" strengthchange="0">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" minspeedmultiplier="1.0" maxspeedmultiplier="1.3">
       <StatValue stattype="MovementSpeed" minvalue="0.0" maxvalue="0.15" />
       <StatValue stattype="SwimmingSpeed" minvalue="0.0" maxvalue="0.15" />
     </Effect>

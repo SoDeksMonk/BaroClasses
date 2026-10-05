@@ -147,7 +147,6 @@
     <ItemContainer capacity="2" canbeselected="true" hideitems="false" slotsperrow="2" msg="ItemMsgInteractSelect">
       <SlotIcon slotindex="0" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
-      <Containable items="robot_module" />
       <Containable items="robotmodule_speed">
         <StatusEffect type="OnInserted" target="Character">
           <Affliction identifier="robot_speed_module" amount="1" />
@@ -226,7 +225,6 @@
       <SlotIcon slotindex="0" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,0,32,32" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/Items/Electricity/signalcomp.png" sourcerect="32,0,32,32" origin="0.5,0.5" />
       <SlotIcon slotindex="2" texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,32,32,32" origin="0.5,0.5" />
-      <Containable items="robot_module" />
       <Containable items="robotmodule_speed">
         <StatusEffect type="OnInserted" target="Character">
           <Affliction identifier="robot_speed_module" amount="1" />
