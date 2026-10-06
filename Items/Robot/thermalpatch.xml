@@ -32,8 +32,8 @@
         <Conditional robot_frame="gt 0" />
         <Sound file="Content/Items/Tools/WeldingLoop.ogg" range="400" />
         <ParticleEmitter particle="weldspark" particlespersecond="60" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="400" />
-        <ReduceAffliction type="damage" amount="20" />
-        <ReduceAffliction type="burn" amount="10" />
+        <ReduceAffliction type="damage" amount="40" />
+        <ReduceAffliction type="burn" amount="20" />
       </StatusEffect>
       <!-- При использовании на роботе при низком навыке механики: заварка слабее -->
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="This, UseTarget">

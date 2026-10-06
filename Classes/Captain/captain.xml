@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Jobs>
-    <Job name="Cap" identifier="barocap" minnumber="0" maxnumber="1" minkarma="0" initialcount="1" CampaignSetupUIOrder="0" uicolor="0.65,0.73,0.84" vitalitymodifier="0" pricemultiplier="1.3" idlebehavior="StayInHull">
+    <Job name="Cap" identifier="barocap" minnumber="0" maxnumber="1" minkarma="0" initialcount="1" CampaignSetupUIOrder="0" uicolor="0.65,0.73,0.84" vitalitymodifier="20" pricemultiplier="1.5" idlebehavior="StayInHull">
         
         <Jobicon>
             <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
@@ -10,7 +10,7 @@
         </JobiconSmall>
         
         <Skills>
-            <Skill identifier="helm" level="40,50" primary="true" pvplevel="65" pricemultiplier="20"/>
+            <Skill identifier="helm" level="45,55" primary="true" pvplevel="65" pricemultiplier="20"/>
             <Skill identifier="weapons" level="25,35" pvplevel="55"/>
             <Skill identifier="mechanical" level="15,25" pvplevel="50"/>
             <Skill identifier="electrical" level="15,25" pvplevel="50"/>

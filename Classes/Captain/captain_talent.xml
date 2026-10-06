@@ -3,7 +3,7 @@
     <TalentTree jobidentifier="barocap">
         <SubTree identifier="barocap_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions requiredtalents="2" maxchosentalents="6">
-                <TalentOption identifier="prodigy"/>
+                <TalentOption identifier="bootcamp"/>
                 <TalentOption identifier="inspirationalleader"/>
                 <TalentOption identifier="veteran"/>
                 <TalentOption identifier="travelingtradesman"/>

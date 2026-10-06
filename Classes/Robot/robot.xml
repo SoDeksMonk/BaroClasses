@@ -8,11 +8,11 @@
       <sprite texture="%ModDir%/Items/Robot/Exosuit.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
     </JobiconSmall>
     <Skills>
-      <Skill identifier="mechanical" level="20,30" />
-      <Skill identifier="electrical" level="20,30" />
-      <Skill identifier="weapons" level="20,30" />
-      <Skill identifier="medical" level="20,30" />
-      <Skill identifier="helm" level="20,30" />
+      <Skill identifier="mechanical" level="30,40" />
+      <Skill identifier="electrical" level="30,40" />
+      <Skill identifier="weapons" level="10,20" />
+      <Skill identifier="medical" level="5,15" />
+      <Skill identifier="helm" level="5,15" />
     </Skills>
     <ItemSet>
       <Item identifier="idcard" equip="true" showpreview="false" />
