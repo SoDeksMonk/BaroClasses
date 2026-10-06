@@ -17,20 +17,23 @@
         </Fabricate>
         <Sprite name="Captain's Cap 1" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="12,130,89,50" origin="0.5,0.5"/>
         <Body width="59" height="40" density="15"/>
-        <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-            <ItemContainer capacity="1" maxstacksize="1" canbeselected="true" containeditems="ethanol,rum,whiskey,poison" >
-                <Containable items="ethanol,rum,whiskey,poison" />
-            </ItemContainer>
-            <StatusEffect type="OnWearing" target="Character" setvalue="true" Condition="0" comparison="AND" >
-                    <Conditional entitytype="eq Character" />
-                    <Conditional HasAffliction="barotrauma" />
-                    <Conditional NotHasAffliction="drunk" />
-                    <Conditional NotHasAffliction="drunknodebuffs" />
-
-                <StatusEffect type="OnUse" target="Character" Condition="1.0" setvalue="true" >
-                    <Affliction identifier="drunk" amount="20" />
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+            <Containable items="ethanol,rum,whiskey">
+                <StatusEffect type="OnWearing" target="Contained" Condition="-1.0" comparison="And">
+                    <Conditional TargetContainer="true" TargetGrandparent="true" drunk="lte 30" />
                 </StatusEffect>
-            </StatusEffect>
+                <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+                    <Conditional drunk="lte 30" />
+                    <Affliction identifier="drunk" amount="2.0" />
+                </StatusEffect>
+                <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+                    <Conditional drunknodebuffs="lte 30" />
+                    <Affliction identifier="drunknodebuffs" amount="2.0" />
+                </StatusEffect>
+            </Containable>
+        </ItemContainer>
+        <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
         
             <sprite name="Captain's Cap 1 Wearable" 
                     texture="Content/Items/Jobgear/headgears.png" 

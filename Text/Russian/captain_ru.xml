@@ -5,8 +5,8 @@
   <talenttree.cap_loyalist>Лоялист</talenttree.cap_loyalist>
   <talenttree.cap_skipper>Шкипер</talenttree.cap_skipper>
   <talenttree.cap_gunsmith>Оружейник</talenttree.cap_gunsmith>
-  <talentdescription.cap_def_helmet>Хороший защитный берет</talentdescription.cap_def_helmet>
-  <talentname.cap_def_helmet>Берет капитана</talentname.cap_def_helmet>
+  <talentdescription.drunken_cap>Дает два замечательных рецепта</talentdescription.drunken_cap>
+  <talentname.drunken_cap>Выпьем!</talentname.drunken_cap>
   <entityname.cap_helmet>Берет капитана</entityname.cap_helmet>
   <entitydescription.cap_helmet>Берет для капитана с автоинжектором для алкоголя. Только для избраных</entitydescription.cap_helmet>
 </infotexts>
