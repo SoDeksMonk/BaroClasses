@@ -35,8 +35,8 @@
   <entitydescription.robotmodule_ranged>Hardware coprocessor for the internal bus. Increases handheld ranged weapon damage by 8%.</entitydescription.robotmodule_ranged>
   <entityname.robotmodule_repair>Auto-Repair Module</entityname.robotmodule_repair>
   <entitydescription.robotmodule_repair>Hardware coprocessor for the internal bus. Provides 0.1 HP/s passive chassis self-repair.</entitydescription.robotmodule_repair>
-  <entityname.robotmodule_efficiency>Efficiency Module</entityname.robotmodule_efficiency>
-  <entitydescription.robotmodule_efficiency>Hardware coprocessor for the internal bus. Reduces fuel rod consumption in the frame.</entitydescription.robotmodule_efficiency>
+  <entityname.robotmodule_efficiency>Chassis Reinforcement Module</entityname.robotmodule_efficiency>
+  <entitydescription.robotmodule_efficiency>Increases maximum health by 10% per installed module.</entitydescription.robotmodule_efficiency>
   <talentname.robot_cap_fabrication>Reinforced Headgear</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Overclocked Strikes</talentname.robot_melee_power>
   <talentname.robot_melee_defense>Reactive Armor</talentname.robot_melee_defense>
@@ -48,15 +48,15 @@
   <talentname.robot_modules_combat>Combat Protocols</talentname.robot_modules_combat>
   <talentdescription.robot_modules_combat>Unlocks fabrication of the Melee and Ballistics modules. Choosing this branch locks System Protocols.</talentdescription.robot_modules_combat>
   <talentname.robot_modules_system>System Protocols</talentname.robot_modules_system>
-  <talentdescription.robot_modules_system>Unlocks fabrication of the Auto-Repair and Efficiency modules. Choosing this branch locks Combat Protocols.</talentdescription.robot_modules_system>
+  <talentdescription.robot_modules_system>Unlocks fabrication of the Auto-Repair and Chassis Reinforcement modules. Choosing this branch locks Combat Protocols.</talentdescription.robot_modules_system>
   <talentname.robot_modules_tier3>Expansion Bus</talentname.robot_modules_tier3>
   <talentdescription.robot_modules_tier3>Unlocks an expanded headset with three module sockets. Wear it instead of the basic module interface.</talentdescription.robot_modules_tier3>
   <talentname.robot_modules_overclock>Clock Speed Overclock</talentname.robot_modules_overclock>
-  <talentdescription.robot_modules_overclock>Increases the effectiveness of installed modules by 50%.</talentdescription.robot_modules_overclock>
+  <talentdescription.robot_modules_overclock>Boosts servo, armor, melee, ballistics, and repair module effects by 50%, and unlocks the overclocked Chassis Reinforcement Module.</talentdescription.robot_modules_overclock>
   <entityname.robotmodule_interface>Module Interface</entityname.robotmodule_interface>
   <entitydescription.robotmodule_interface>A headset with two sockets for robot modules. The slots are available while the interface is worn.</entitydescription.robotmodule_interface>
   <entityname.robotmodule_expansion>Expanded Module Interface</entityname.robotmodule_expansion>
   <entitydescription.robotmodule_expansion>A headset with three sockets for robot modules. Unlocked by the Expansion Bus talent and replaces the basic interface.</entitydescription.robotmodule_expansion>
-  <entityname.robotmodule_efficiency_overclock>Overclocked Efficiency Module</entityname.robotmodule_efficiency_overclock>
-  <entitydescription.robotmodule_efficiency_overclock>An upgraded Efficiency Module that further reduces fuel rod consumption.</entitydescription.robotmodule_efficiency_overclock>
+  <entityname.robotmodule_efficiency_overclock>Overclocked Chassis Reinforcement Module</entityname.robotmodule_efficiency_overclock>
+  <entitydescription.robotmodule_efficiency_overclock>Increases maximum health by 10% per installed module.</entitydescription.robotmodule_efficiency_overclock>
 </infotexts>

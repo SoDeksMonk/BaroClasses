@@ -35,8 +35,8 @@
   <entitydescription.robotmodule_ranged>Аппаратный микропроцессор для внутренней шины робота. Увеличивает урон от ручного дальнобойного оружия на 8%.</entitydescription.robotmodule_ranged>
   <entityname.robotmodule_repair>Модуль авторемонта</entityname.robotmodule_repair>
   <entitydescription.robotmodule_repair>Аппаратный микропроцессор для внутренней шины робота. Добавляет пассивное самовосстановление корпуса на 0.1 HP в секунду.</entitydescription.robotmodule_repair>
-  <entityname.robotmodule_efficiency>Модуль энергоэффективности</entityname.robotmodule_efficiency>
-  <entitydescription.robotmodule_efficiency>Аппаратный микропроцессор для внутренней шины робота. Снижает расход топливного стержня в каркасе.</entitydescription.robotmodule_efficiency>
+  <entityname.robotmodule_efficiency>Модуль усиления каркаса</entityname.robotmodule_efficiency>
+  <entitydescription.robotmodule_efficiency>Увеличивает максимальное здоровье на 10% за каждый установленный модуль.</entitydescription.robotmodule_efficiency>
   <talentname.robot_cap_fabrication>Усиленная экипировка головы</talentname.robot_cap_fabrication>
   <talentname.robot_melee_power>Усиленный удар</talentname.robot_melee_power>
   <talentname.robot_melee_defense>Реактивная броня</talentname.robot_melee_defense>
@@ -48,15 +48,15 @@
   <talentname.robot_modules_combat>Боевые протоколы</talentname.robot_modules_combat>
   <talentdescription.robot_modules_combat>Открывает изготовление модулей ближнего боя и баллистики. Выбор этой ветки закрывает системные протоколы.</talentdescription.robot_modules_combat>
   <talentname.robot_modules_system>Системные протоколы</talentname.robot_modules_system>
-  <talentdescription.robot_modules_system>Открывает изготовление модулей авторемонта и энергоэффективности. Выбор этой ветки закрывает боевые протоколы.</talentdescription.robot_modules_system>
+  <talentdescription.robot_modules_system>Открывает изготовление модулей авторемонта и усиления каркаса. Выбор этой ветки закрывает боевые протоколы.</talentdescription.robot_modules_system>
   <talentname.robot_modules_tier3>Шина расширения</talentname.robot_modules_tier3>
   <talentdescription.robot_modules_tier3>Открывает изготовление расширенной гарнитуры с тремя слотами для модулей. Наденьте её вместо базового интерфейса модулей.</talentdescription.robot_modules_tier3>
   <talentname.robot_modules_overclock>Разгон тактовой частоты</talentname.robot_modules_overclock>
-  <talentdescription.robot_modules_overclock>Увеличивает эффективность установленных модулей на 50%.</talentdescription.robot_modules_overclock>
+  <talentdescription.robot_modules_overclock>Усиливает эффекты модулей сервопривода, брони, ближнего боя, баллистики и авторемонта на 50%; открывает разогнанный модуль усиления каркаса.</talentdescription.robot_modules_overclock>
   <entityname.robotmodule_interface>Интерфейс модулей</entityname.robotmodule_interface>
   <entitydescription.robotmodule_interface>Гарнитура с двумя гнёздами для модулей робота. Слоты доступны, когда интерфейс надет.</entitydescription.robotmodule_interface>
   <entityname.robotmodule_expansion>Расширенный интерфейс модулей</entityname.robotmodule_expansion>
   <entitydescription.robotmodule_expansion>Гарнитура с тремя гнёздами для модулей робота. Разблокируется талантом «Шина расширения» и заменяет базовый интерфейс.</entitydescription.robotmodule_expansion>
-  <entityname.robotmodule_efficiency_overclock>Разогнанный модуль энергоэффективности</entityname.robotmodule_efficiency_overclock>
-  <entitydescription.robotmodule_efficiency_overclock>Усиленная версия модуля энергоэффективности, дополнительно снижает расход топливного стержня.</entitydescription.robotmodule_efficiency_overclock>
+  <entityname.robotmodule_efficiency_overclock>Разогнанный модуль усиления каркаса</entityname.robotmodule_efficiency_overclock>
+  <entitydescription.robotmodule_efficiency_overclock>Увеличивает максимальное здоровье на 10% за каждый установленный модуль.</entitydescription.robotmodule_efficiency_overclock>
 </infotexts>

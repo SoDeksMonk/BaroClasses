@@ -95,8 +95,8 @@
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
   </Item>
 
-  <!-- 6. Модуль энергоэффективности (Уменьшает расход стержня на 0.02) -->
-  <Item name="" identifier="robotmodule_efficiency" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <!-- 6. Модуль укрепления каркаса (+10% максимального здоровья за установленный модуль) -->
+  <Item name="" identifier="robotmodule_efficiency" category="Equipment,Electrical" Tags="smallitem,robot_module,robotmodule_health" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="250" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" amount="2" />
@@ -113,7 +113,7 @@
     <Body width="30" height="30" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="" identifier="robotmodule_efficiency_overclock" category="Equipment,Electrical" tags="smallitem,robot_module,robotmodule_efficiency" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_efficiency_overclock" category="Equipment,Electrical" tags="smallitem,robot_module,robotmodule_health_overclock" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="400" sold="false" />
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" amount="3" />
@@ -187,25 +187,18 @@
           <ReduceAffliction identifier="robot_repair_module" amount="1" />
         </StatusEffect>
       </Containable>
-      <Containable items="robotmodule_efficiency">
-        <StatusEffect type="OnInserted" target="Character">
-          <Affliction identifier="robot_efficiency_module" amount="2" />
-        </StatusEffect>
-        <StatusEffect type="OnRemoved" target="Character">
-          <ReduceAffliction identifier="robot_efficiency_module" amount="2" />
-        </StatusEffect>
-      </Containable>
-      <Containable items="robotmodule_efficiency_overclock">
-        <StatusEffect type="OnInserted" target="Character">
-          <Affliction identifier="robot_efficiency_module" amount="3" />
-        </StatusEffect>
-        <StatusEffect type="OnRemoved" target="Character">
-          <ReduceAffliction identifier="robot_efficiency_module" amount="3" />
-        </StatusEffect>
-      </Containable>
+      <Containable items="robotmodule_efficiency" />
+      <Containable items="robotmodule_efficiency_overclock" />
     </ItemContainer>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot0" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot1" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot2" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency" type="Contained" targetslot="0" /><Affliction identifier="robot_health_slot0" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency_overclock" type="Contained" targetslot="0" /><Affliction identifier="robot_health_slot0" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency" type="Contained" targetslot="1" /><Affliction identifier="robot_health_slot1" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency_overclock" type="Contained" targetslot="1" /><Affliction identifier="robot_health_slot1" amount="10" /></StatusEffect>
     </Wearable>
   </Item>
 
@@ -265,25 +258,20 @@
           <ReduceAffliction identifier="robot_repair_module" amount="1" />
         </StatusEffect>
       </Containable>
-      <Containable items="robotmodule_efficiency">
-        <StatusEffect type="OnInserted" target="Character">
-          <Affliction identifier="robot_efficiency_module" amount="2" />
-        </StatusEffect>
-        <StatusEffect type="OnRemoved" target="Character">
-          <ReduceAffliction identifier="robot_efficiency_module" amount="2" />
-        </StatusEffect>
-      </Containable>
-      <Containable items="robotmodule_efficiency_overclock">
-        <StatusEffect type="OnInserted" target="Character">
-          <Affliction identifier="robot_efficiency_module" amount="3" />
-        </StatusEffect>
-        <StatusEffect type="OnRemoved" target="Character">
-          <ReduceAffliction identifier="robot_efficiency_module" amount="3" />
-        </StatusEffect>
-      </Containable>
+      <Containable items="robotmodule_efficiency" />
+      <Containable items="robotmodule_efficiency_overclock" />
     </ItemContainer>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Expanded Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot0" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot1" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot2" amount="100" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency" type="Contained" targetslot="0" /><Affliction identifier="robot_health_slot0" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency_overclock" type="Contained" targetslot="0" /><Affliction identifier="robot_health_slot0" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency" type="Contained" targetslot="1" /><Affliction identifier="robot_health_slot1" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency_overclock" type="Contained" targetslot="1" /><Affliction identifier="robot_health_slot1" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency" type="Contained" targetslot="2" /><Affliction identifier="robot_health_slot2" amount="10" /></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true" setvalue="true"><RequiredItem items="robotmodule_efficiency_overclock" type="Contained" targetslot="2" /><Affliction identifier="robot_health_slot2" amount="10" /></StatusEffect>
     </Wearable>
   </Item>
 </Items>

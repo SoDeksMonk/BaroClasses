@@ -15,18 +15,20 @@
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
     </Effect>
   </Affliction>
-  <Affliction
-    name="Robot Efficiency Subsystem"
-    identifier="robot_efficiency_module"
-    description=""
-    type="talentbuff"
-    isbuff="true"
-    limbspecific="false"
-    indicatorlimb="Torso"
-    showiconthreshold="1000"
-    showinhealthscannerthreshold="1000"
-    maxstrength="9">
-    <Effect minstrength="0" maxstrength="9" strengthchange="0" />
+  <Affliction name="Robot Health Module Socket 1" identifier="robot_health_slot0" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="10">
+    <Effect minstrength="1" maxstrength="10" strengthchange="-10">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction name="Robot Health Module Socket 2" identifier="robot_health_slot1" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="10">
+    <Effect minstrength="1" maxstrength="10" strengthchange="-10">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction name="Robot Health Module Socket 3" identifier="robot_health_slot2" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="10">
+    <Effect minstrength="1" maxstrength="10" strengthchange="-10">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+    </Effect>
   </Affliction>
   <Affliction
     name="Robot Servo Subsystem"
