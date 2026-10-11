@@ -2,8 +2,22 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <jobname.baromed>Doc</jobname.baromed>
   <jobdescription.baromed>Veteran medic.</jobdescription.baromed>
-  <talenttree.combat_medic>Combat medic</talenttree.combat_medic>
-  <talenttree.Scammer>Scammer</talenttree.Scammer>
-  <talentname.Hunter>Hunter</talentname.Hunter>
+  <talenttree.veteran>Veteran</talenttree.veteran>
+  <talenttree.Scammer>Supply chain</talenttree.Scammer>
+  <talentname.betterman>Better Man</talentname.betterman>
+  <talentdescription.betterman>Gain +15 Weapons skill and deal 15% more damage with ranged weapons.</talentdescription.betterman>
   <entityname.health_helmet>Health helmet</entityname.health_helmet>
+  <talentname.custommedhelmet>Medical Helmet</talentname.custommedhelmet>
+  <talentdescription.custommedhelmet>The Medical Helmet displays the medical status HUD while worn.</talentdescription.custommedhelmet>
+  <talentname.customhealthinsurance>Health Insurance</talentname.customhealthinsurance>
+  <talentdescription.customhealthinsurance>Get 20% off medical items. Complete a mission without losing any crew members to receive 300 marks.</talentdescription.customhealthinsurance>
+  <talentname.customresistance>Protection</talentname.customresistance>
+  <talentdescription.customresistance>Take 20% less physical damage.</talentdescription.customresistance>
+  <talentname.combatrage>Combat Rage</talentname.combatrage>
+  <talentdescription.combatrage>When an ally is unconscious nearby, gain 25% firing rate, 15% damage, and 10% movement speed.</talentdescription.combatrage>
+  <talentname.customregen>Regeneration Aura</talentname.customregen>
+  <talentdescription.customregen>Members of your crew are more resilient to minor injuries.</talentdescription.customregen>
+  <talentname.customplantyield>Botanical Salvage</talentname.customplantyield>
+  <talentdescription.customplantyield>When deconstructing plant products, you have a 30% chance to receive twice the materials.</talentdescription.customplantyield>
+  <talentdescription.custommacrodosing>Buffs you apply last 50% longer. Deconstructing plant products yields +1 material. Also unlocks the Endocrine Booster recipe.</talentdescription.custommacrodosing>
 </infotexts>

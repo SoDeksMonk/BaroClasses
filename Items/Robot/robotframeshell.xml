@@ -6,7 +6,7 @@
     <Body width="150" height="230" density="30" />
     <!-- Powers the vanilla Voltage-based movement lock; fuel sets Voltage while contained. -->
     <Powered PowerConsumption="10.0" IsActive="true" />
-    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" canbeselected="true" canbepicked="false" allowusewhenworn="true">
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="false" allowusewhenworn="true">
       <sprite name="Robot Shell Helmet" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="false" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <sprite name="Robot Shell Torso" texture="%ModDir%/Items/Robot/Exosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193" />
       <sprite name="Robot Shell Right Hand" texture="%ModDir%/Items/Robot/Exosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="383,160,64,48" />
@@ -33,8 +33,10 @@
         <ReduceAffliction type="damage" amount="0.2" />
         <ReduceAffliction type="burn" amount="0.2" />
         <ReduceAffliction type="poison" amount="1000" />
+        <ReduceAffliction type="paralysis" amount="1000" />
         <ReduceAffliction type="bleeding" amount="1000" />
       </StatusEffect>
+      <!-- Medical items have no effect on the robot; robotmedical tools such as thermalpatch are exempt. -->
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" />
       <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.2" HideFace="true" ObstructVisionAmount="0.5" PressureProtection="7000.0" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />

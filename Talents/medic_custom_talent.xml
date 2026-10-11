@@ -1,29 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
-    <Talent identifier="hunter">
+    <Talent identifier="betterman">
         <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,3" sheetelementsize="128,128"/>
-        <Description tag="talentdescription.moredamagerifles">
-        <Replace tag="[amount]" value="15" color="gui.green"/>
-        </Description>
-            <Description tag="talentdescription.unlockrecipe">
-            <Replace tag="[itemname]" value="entityname.rifle,entityname.riflebullet" color="gui.orange"/>
-        </Description>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionAttackData tags="riflemanbonus"/>
-            </Conditions>
+        <Description tag="talentdescription.betterman" />
+        <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+                <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="15" />
+                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.15" />
             </Abilities>
         </AbilityGroupEffect>
-        <AddedRecipe itemidentifier="rifle"/>
-        <AddedRecipe itemidentifier="riflebullet"/>
     </Talent>
-    <Talent identifier="med_visor" name="Med Visor" description="Med Helmet">
+    <Talent identifier="custommedhelmet">
         <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,3" sheetelementsize="128,128" />
+        <Description tag="talentdescription.custommedhelmet" />
         <Description tag="talentdescription.unlockrecipe">
             <Replace tag="[itemname]" value="entityname.health_helmet" color="gui.orange" />
         </Description>
         <AddedRecipe itemidentifier="health_helmet" />
     </Talent>
+    <Talent identifier="customhealthinsurance">
+        <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,2" sheetelementsize="128,128" />
+        <Description tag="talentdescription.customhealthinsurance" />
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="medical" stattype="StoreBuyMultiplier" value="0.2" setvalue="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+            <Conditions>
+                <AbilityConditionNoCrewDied assistantsDontCount="false" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveMoney amount="300" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+    <Talent identifier="customresistance">
+        <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,4" sheetelementsize="128,128" />
+        <Description tag="talentdescription.customresistance" />
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveResistance resistanceid="damage" multiplier="0.8" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+    <Talent identifier="combatrage">
+        <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
+        <Description tag="talentdescription.combatrage" />
+        <AbilityGroupInterval interval="0.5">
+            <Conditions>
+                <AbilityConditionCrewMemberUnconscious />
+                <AbilityConditionAllyNearby distance="500" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="RangedAttackSpeed" value="0.25" />
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.15" />
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1" />
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+    <Talent identifier="customregen">
+        <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,2" sheetelementsize="128,128" />
+        <Description tag="talentdescription.customregen" />
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional IsDead="false" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true" requiresalive="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <ReduceAffliction identifier="bitewounds" amount="0.2" />
+                            <ReduceAffliction identifier="lacerations" amount="0.2" />
+                            <ReduceAffliction identifier="gunshotwound" amount="0.2" />
+                            <ReduceAffliction identifier="bloodloss" amount="0.2" />
+                            <ReduceAffliction identifier="bleeding" amount="0.2" />
+                            <ReduceAffliction identifier="blunttrauma" amount="0.2" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+    <Talent identifier="customplantyield">
+        <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,3" sheetelementsize="128,128" />
+        <Description tag="talentdescription.customplantyield" />
+        <AbilityGroupEffect abilityeffecttype="OnItemDeconstructedMaterial">
+            <Conditions>
+                <AbilityConditionServerRandom randomchance="0.3" />
+                <AbilityConditionItem identifiers="creepingorange,badcreepingorange,tobaccobud,saltbulb,raptorbane,badraptorbane,banana" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyValue multiplyvalue="2" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+    <override>
+        <Talent identifier="macrodosing">
+            <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,5" sheetelementsize="128,128" />
+            <Description tag="talentdescription.custommacrodosing" />
+            <Description tag="talentdescription.unlockrecipe">
+                <Replace tag="[itemname]" value="entityname.endocrinebooster" color="gui.orange" />
+            </Description>
+            <Description tag="entitydescription.endocrinebooster" />
+            <AbilityGroupEffect abilityeffecttype="None">
+                <Abilities>
+                    <CharacterAbilityGiveStat stattype="BuffItemApplyingMultiplier" value="0.5" />
+                </Abilities>
+            </AbilityGroupEffect>
+            <AbilityGroupEffect abilityeffecttype="OnItemDeconstructedMaterial">
+                <Conditions>
+                    <AbilityConditionItem identifiers="creepingorange,badcreepingorange,tobaccobud,saltbulb,raptorbane,badraptorbane,banana" />
+                </Conditions>
+                <Abilities>
+                    <CharacterAbilityModifyValue addedvalue="1" />
+                </Abilities>
+            </AbilityGroupEffect>
+            <AddedRecipe itemidentifier="endocrinebooster" />
+        </Talent>
+    </override>
 </Talents>

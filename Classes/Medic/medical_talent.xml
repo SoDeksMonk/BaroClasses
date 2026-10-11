@@ -3,58 +3,67 @@
     <TalentTree jobidentifier="baromed">
         <SubTree identifier="baromed_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions requiredtalents="2" maxchosentalents="6">
-                <TalentOption identifier="healthinsurance"/>
-                <TalentOption identifier="nobodyimportantdies"/>
+                <TalentOption identifier="starterquest"/>
+                <TalentOption identifier="mule"/>
                 <TalentOption identifier="exampleofhealth"/>
-                <TalentOption identifier="laresistance"/>
+                <TalentOption identifier="bountyhunter"/>
                 <TalentOption identifier="selfcare"/>
-                <TalentOption identifier="stayinalive"/>
+                <TalentOption identifier="skedaddle"/>
             </TalentOptions>
-                <TalentOptions requiredtalents="2" maxchosentalents="5">
-                <TalentOption identifier="firemanscarry"/>
-                <TalentOption identifier="medicalcompanion"/>
+                <TalentOptions requiredtalents="2" maxchosentalents="6">
+                <TalentOption identifier="camaraderie"/>
+                <TalentOption identifier="custommedhelmet"/>
                 <TalentOption identifier="dontdieonme"/>
-                <TalentOption identifier="nopressure"/>
-                <TalentOption identifier="blooddonor"/>
+                <TalentOption identifier="customresistance"/>
+                <TalentOption identifier="crustyseaman"/>
+				<TalentOption identifier="travelingtradesman"/>
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="combat_medic" type="specialization" requires="baromed_primary" blocks="medic,Scammer">
+        <SubTree identifier="veteran" type="specialization" requires="baromed_primary" blocks="medic,Scammer">
             <TalentOptions>
-                <TalentOption identifier="hunter"/>
+                <TalentOption identifier="betterman"/>
             </TalentOptions>
             <TalentOptions maxchosentalents="1">
                 <TalentOption identifier="tandemfire"/>
                 <TalentOption identifier="extrapowder"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="supersoldiers"/>
+				<TalentOption identifier="combatrage"/>
+                <TalentOption identifier="inordinateexsanguination"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="macrodosing"/>
+                <TalentOption identifier="implacable"/>
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="medic" type="specialization" requires="baromed_primary" blocks="combat_medic,Scammer">
+        <SubTree identifier="medic" type="specialization" requires="baromed_primary" blocks="veteran,Scammer">
             <TalentOptions>
-                <TalentOption identifier="macrodosing"/>
+                <TalentOption identifier="medicalexpertise"/>
             </TalentOptions>
             <TalentOptions maxchosentalents="1">
-                <TalentOption identifier="medicalassistance"/>
+                <TalentOption identifier="genetampering"/>
                 <TalentOption identifier="vitaminsupplements"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="drsubmarine"/>
-                <TalentOption identifier="emergencyresponse"/>
+                <TalentOption identifier="customregen"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="miracleworker"/>
             </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="macrodosing"/>
-            </TalentOptions>
         </SubTree>
-        <SubTree identifier="Scammer" type="specialization" requires="baromed_primary" blocks="combat_medic,medic">
-            <TalentOptions maxchosentalents="1">
-                <TalentOption identifier="med_visor"/>
+        <SubTree identifier="Scammer" type="specialization" requires="baromed_primary" blocks="veteran,medic">
+            <TalentOptions>
+                <TalentOption identifier="customhealthinsurance"/>
+            </TalentOptions>
+			<TalentOptions maxchosentalents="1">
+                <TalentOption identifier="labcontacts"/>
+				<TalentOption identifier="customplantyield"/>
+            </TalentOptions>
+			<TalentOptions maxchosentalents="1">
+                <TalentOption identifier="supersoldiers"/>
+            </TalentOptions>
+			<TalentOptions>
+                <TalentOption identifier="macrodosing"/>
             </TalentOptions>
         </SubTree>
     </TalentTree>

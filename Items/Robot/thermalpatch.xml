@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="" identifier="thermalpatch" category="Equipment,Medical" Tags="smallitem,medical" maxstacksize="16" maxstacksizecharacterinventory="8" useinhealthinterface="true" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="" identifier="thermalpatch" category="Equipment,Medical" Tags="smallitem,robotmedical" maxstacksize="16" maxstacksizecharacterinventory="8" useinhealthinterface="true" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <PreferredContainer primary="engcab" secondary="supplycab" minamount="2" maxamount="4" spawnprobability="0.5" />
     <Price baseprice="35" minavailable="10">
       <Price storeidentifier="merchantoutpost" />

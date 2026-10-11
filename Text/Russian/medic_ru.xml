@@ -2,9 +2,23 @@
 <infotexts language="Russian" nowhitespace="false" translatedname="Русский">
   <jobname.baromed>Док</jobname.baromed>
   <jobdescription.baromed>Ветеран врач.</jobdescription.baromed>
-  <talenttree.combat_medic>Боевой врач</talenttree.combat_medic>
-  <talenttree.Scammer>Шарлатан</talenttree.Scammer>
-  <talentname.Hunter>Охотник</talentname.Hunter>
+  <talenttree.veteran>Ветеран</talenttree.veteran>
+  <talenttree.Scammer>Цепочка поставок</talenttree.Scammer>
+  <talentname.betterman>Better Man</talentname.betterman>
+  <talentdescription.betterman>Получите +15 к навыку «Оружие» и наносите на 15% больше урона дальнобойным оружием.</talentdescription.betterman>
   <entityname.health_helmet>Мед шлем</entityname.health_helmet>
   <talentdescription.health_helmet>Мед шлем</talentdescription.health_helmet>
+  <talentname.custommedhelmet>Медицинский шлем</talentname.custommedhelmet>
+  <talentdescription.custommedhelmet>Медицинский шлем отображает медицинский интерфейс при ношении.</talentdescription.custommedhelmet>
+  <talentname.customhealthinsurance>Страховка</talentname.customhealthinsurance>
+  <talentdescription.customhealthinsurance>Скидка 20% на медицинские товары. Если миссия пройдена без потерь среди экипажа, вы получите 300 марок.</talentdescription.customhealthinsurance>
+  <talentname.customresistance>Защита</talentname.customresistance>
+  <talentdescription.customresistance>Снижает получаемый физический урон на 20%.</talentdescription.customresistance>
+  <talentname.combatrage>Боевой раж</talentname.combatrage>
+  <talentdescription.combatrage>Когда рядом есть союзник без сознания, ваша скорострельность увеличивается на 25%, урон — на 15%, а скорость передвижения — на 10%.</talentdescription.combatrage>
+  <talentname.customregen>Аура регенерации</talentname.customregen>
+  <talentdescription.customregen>Члены вашей команды легче переносят мелкие трамы</talentdescription.customregen>
+  <talentname.customplantyield>Разбор цветов</talentname.customplantyield>
+  <talentdescription.customplantyield>При разборе растительных продуктов есть 30% шанс получить вдвое больше материалов.</talentdescription.customplantyield>
+  <talentdescription.custommacrodosing>Накладываемые вами баффы действуют на 50% дольше. При разборе растительных продуктов вы получаете +1 к материалам. Также открывается рецепт эндокринного усилителя.</talentdescription.custommacrodosing>
 </infotexts>
