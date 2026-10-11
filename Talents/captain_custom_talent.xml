@@ -5,10 +5,7 @@
             <Replace tag="[stunresistance]" value="75" color="gui.green"/>
         </Description>
         <Description tag="talentdescription.unlockrecipe">
-            <Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
-        </Description>
-        <Description tag="talentdescription.unlockrecipe">
-            <Replace tag="[itemname]" value="entityname.cap_helmet" color="gui.orange"/>
+            <Replace tag="[itemname]" value="entityname.rum, entityname.cap_helmet" color="gui.orange"/>
         </Description>
         <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
         <AbilityGroupInterval interval="1.0">
