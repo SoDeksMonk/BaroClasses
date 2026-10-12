@@ -100,6 +100,11 @@
     <Description tag="talentdescription.robot_crafter_refiner">
       <Replace tag="[chance]" value="50" color="gui.green" />
     </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="IncreaseFabricationQuality" value="1" />
+      </Abilities>
+    </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnItemDeconstructedMaterial">
       <Conditions>
         <AbilityConditionServerRandom randomchance="0.5" />

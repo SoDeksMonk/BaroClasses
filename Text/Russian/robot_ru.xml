@@ -24,7 +24,7 @@
   <talentname.robot_crafter_speed>Промышленный разгон</talentname.robot_crafter_speed>
   <talentdescription.robot_crafter_speed>Скорость работы фабрикаторов и деконструкторов увеличивается на 50%.</talentdescription.robot_crafter_speed>
   <talentname.robot_crafter_refiner>Обогащение руды</talentname.robot_crafter_refiner>
-  <talentdescription.robot_crafter_refiner>При переработке сырой руды и минералов в деконструкторе есть [chance]% шанс получить вдвое больше материалов.</talentdescription.robot_crafter_refiner>
+  <talentdescription.robot_crafter_refiner>При переработке сырой руды и минералов в деконструкторе есть [chance]% шанс получить вдвое больше материалов. Все создаваемые вами предметы получают +1 уровень качества.</talentdescription.robot_crafter_refiner>
   <entityname.robotmodule_speed>Модуль сервопривода</entityname.robotmodule_speed>
   <entitydescription.robotmodule_speed>Аппаратный микропроцессор для внутренней шины робота. Увеличивает скорость перемещения и плавания на 5%.</entitydescription.robotmodule_speed>
   <entityname.robotmodule_armor>Модуль бронепластины</entityname.robotmodule_armor>
