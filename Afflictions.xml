@@ -11,12 +11,10 @@
     showiconthreshold="1000"
     showinhealthscannerthreshold="1000"
     maxstrength="1">
-    <Effect minstrength="0" maxstrength="1" resistancefor="geneticmaterialdebuff" minresistance="1.0" maxresistance="1.0">
+    <Effect minstrength="0" maxstrength="1" resistancefor="geneticmaterialdebuff,poison,paralysis" minresistance="1.0" maxresistance="1.0">
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-1.0" />
     </Effect>
-    <Effect minstrength="0" maxstrength="1" resistancefor="poison" minresistance="1.0" maxresistance="1.0" />
-    <Effect minstrength="0" maxstrength="1" resistancefor="paralysis" minresistance="1.0" maxresistance="1.0" />
   </Affliction>
   <Affliction name="Robot Health Module Socket 1" identifier="robot_health_slot0" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-10">
