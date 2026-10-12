@@ -26,6 +26,7 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="specops"/>
+                <TalentOption identifier="yourreputation"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="lonewolf"/>
@@ -33,6 +34,7 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="bigguns"/>
+                <TalentOption identifier="warlord"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="cap_skipper" type="specialization" requires="barocap_primary" blocks="cap_loyalist,cap_gunsmith">
@@ -61,9 +63,11 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="easyturtle"/>
+                <TalentOption identifier="anappleaday"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="warlord"/>
+                <TalentOption identifier="implacable"/>
+                <TalentOption identifier="nuclearoption"/>
             </TalentOptions>
         </SubTree>
     </TalentTree>
