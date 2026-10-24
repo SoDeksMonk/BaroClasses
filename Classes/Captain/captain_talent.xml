@@ -33,7 +33,7 @@
                 <TalentOption identifier="drunken_cap"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="bigguns"/>
+                <TalentOption identifier="biggunsplus"/>
                 <TalentOption identifier="warlord"/>
             </TalentOptions>
         </SubTree>

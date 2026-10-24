@@ -48,7 +48,7 @@
                             deflectprojectiles="true"/>
             <damagemodifier afflictionidentifiers="concussion" 
                             armorsector="0.0,360.0"
-                            damagemultiplier="0.1"
+                            damagemultiplier="0.0"
                             damagesound="" 
                             deflectprojectiles="true"/>
             <SkillModifier skillidentifier="weapons" skillvalue="10"/>

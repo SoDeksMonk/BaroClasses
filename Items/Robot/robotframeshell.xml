@@ -35,6 +35,7 @@
         <ReduceAffliction type="poison" amount="1000" />
         <ReduceAffliction type="paralysis" amount="1000" />
         <ReduceAffliction type="bleeding" amount="1000" />
+        <ReduceAffliction type="infection" amount="1000" />
       </StatusEffect>
       <!-- Medical items have no effect on the robot; robotmedical tools such as thermalpatch are exempt. -->
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" />
