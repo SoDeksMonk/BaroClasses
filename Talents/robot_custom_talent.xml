@@ -126,9 +126,28 @@
   <Talent identifier="robot_modules_combat">
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_combat" />
+    <!-- The base ballistics module bonus also scales with the number installed. -->
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="0.33333334" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="0.6666667" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="1.0" />
         <AbilityConditionAttackData weapontype="handheldranged" />
       </Conditions>
       <Abilities>
@@ -152,9 +171,10 @@
   <Talent identifier="robot_modules_overclock">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.robot_modules_overclock" />
+    <!-- The affliction strength counts installed modules (max 3): +2.5% per servo module. -->
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_speed_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_speed_module" minimumpercentage="0.33333334" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.025" />
@@ -163,7 +183,27 @@
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_armor_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_speed_module" minimumpercentage="0.6666667" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.025" />
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.025" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_speed_module" minimumpercentage="1.0" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.025" />
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.025" />
+      </Abilities>
+    </AbilityGroupInterval>
+
+    <!-- One threshold group per installed armor module, for +1.5% resistance each. -->
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_armor_module" minimumpercentage="0.33333334" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.985" />
@@ -171,15 +211,51 @@
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_melee_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_armor_module" minimumpercentage="0.6666667" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.985" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_armor_module" minimumpercentage="1.0" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.985" />
+      </Abilities>
+    </AbilityGroupInterval>
+
+    <!-- +10% melee damage per installed melee module. -->
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_melee_module" minimumpercentage="0.33333334" />
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1" />
       </Abilities>
     </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_melee_module" minimumpercentage="0.6666667" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_melee_module" minimumpercentage="1.0" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1" />
+      </Abilities>
+    </AbilityGroupInterval>
+
+    <!-- The repair module restores +0.05 extra damage and burn per installed module. -->
     <AbilityGroupInterval interval="1.0">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_repair_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_repair_module" minimumpercentage="0.33333334" />
       </Conditions>
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
@@ -192,9 +268,59 @@
         </CharacterAbilityApplyStatusEffects>
       </Abilities>
     </AbilityGroupInterval>
+    <AbilityGroupInterval interval="1.0">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_repair_module" minimumpercentage="0.6666667" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+              <ReduceAffliction type="damage" amount="0.05" />
+              <ReduceAffliction type="burn" amount="0.05" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="1.0">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_repair_module" minimumpercentage="1.0" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+              <ReduceAffliction type="damage" amount="0.05" />
+              <ReduceAffliction type="burn" amount="0.05" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+
+    <!-- +4% ranged damage per installed ballistics module. -->
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" />
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="0.33333334" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.04" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="0.6666667" />
+        <AbilityConditionAttackData weapontype="handheldranged" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.04" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="robot_ranged_module" minimumpercentage="1.0" />
         <AbilityConditionAttackData weapontype="handheldranged" />
       </Conditions>
       <Abilities>

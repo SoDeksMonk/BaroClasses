@@ -27,7 +27,7 @@
         </Containable>
       </SubContainer>
       <SubContainer capacity="2" maxstacksize="1">
-        <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,robotupgradebelt,fuelrod,fulguriumfuelrod,thoriumfuelrod" />
+        <Containable items="smallitem,mediumitem,largeitem,weapon,alienartifact" excludeditems="toolbelt,toolbox,bandolier,robotupgradebelt,fuelrod,fulguriumfuelrod,thoriumfuelrod" />
       </SubContainer>
     </ItemContainer>
   </Item>
