@@ -25,4 +25,31 @@
         <AddedRecipe itemidentifier="rum"/>
         <AddedRecipe itemidentifier="cap_helmet"/>
     </Talent>
+    <Talent identifier="biggunsplus">
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,4" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.bigguns">
+            <Replace tag="[amount]" value="30" color="gui.green"/>
+        </Description>
+        <Description tag="talentdescription.reducedualwieldpenalty">
+            <Replace tag="[amount]" value="50" color="gui.green"/>
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.handcannon, entityname.handcannonround" color="gui.orange"/>
+        </Description>
+        <AddedRecipe itemidentifier="handcannon"/>
+        <AddedRecipe itemidentifier="handcannonround"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="DualWieldingPenaltyReduction" value="0.5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
 </Talents>
