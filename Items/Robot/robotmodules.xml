@@ -133,7 +133,7 @@
   </Item>
 
   <!-- The interface is crafted only after the Basic Modules talent and occupies the Headset slot. -->
-  <Item name="" identifier="robotmodule_interface" category="Equipment,Electrical" tags="smallitem,robotmodule_interface" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_interface" category="Equipment,Electrical" tags="smallitem,mobileradio,robotmodule_interface" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="300" sold="false" />
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="30" />
@@ -190,6 +190,12 @@
       <Containable items="robotmodule_efficiency" />
       <Containable items="robotmodule_efficiency_overclock" />
     </ItemContainer>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
       <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot0" amount="100" /></StatusEffect>
@@ -203,7 +209,7 @@
   </Item>
 
   <!-- Tier-3 interface: the third slot exists only on this talent-unlocked headset. -->
-  <Item name="" identifier="robotmodule_expansion" category="Equipment,Electrical" tags="smallitem,robotmodule_expansion" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="robotmodule_expansion" category="Equipment,Electrical" tags="smallitem,mobileradio,robotmodule_expansion" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
     <Price baseprice="400" sold="false" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
@@ -261,6 +267,12 @@
       <Containable items="robotmodule_efficiency" />
       <Containable items="robotmodule_efficiency_overclock" />
     </ItemContainer>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
     <Wearable limbtype="Head" slots="Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Robot Module Interface Expanded Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
       <StatusEffect type="OnWearing" target="Character" interval="0.1" disabledeltatime="true"><ReduceAffliction identifier="robot_health_slot0" amount="100" /></StatusEffect>
